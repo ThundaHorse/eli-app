@@ -13,7 +13,7 @@ import './header.scss';
 export const PageHeader = () => {
   return (
     <Navbar bg='dark' variant='dark' expand={'sm'}>
-      <Container fluid className='justify-content-end'>
+      <Container className='justify-content-end'>
         <Nav className='justify-content-center flex-grow-1 pe-3 d-none d-md-flex'>
           <NavLink href='/'>Home</NavLink>
           <NavLink href='/book-now'>Book Now</NavLink>
