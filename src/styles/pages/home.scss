@@ -1,8 +1,17 @@
-#intro-opening-2,
 #intro-companies,
 #how-it-works {
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+.intro-text-wrapper {
+  width: 50%;
+  margin: auto;
+
+  .intro-call-to-action {
+    line-height: 1.2em;
+    font-size: 88px;
+  }
 }
 
 .home-image-1,
@@ -71,6 +80,16 @@
     .intro-image-1 {
       position: absolute;
       z-index: -1;
+    }
+  }
+
+  .intro-text-wrapper {
+    width: 100%;
+
+    .intro-call-to-action {
+      line-height: 1.2em;
+      font-size: 32px;
+      text-align: center;
     }
   }
 
