@@ -1,13 +1,6 @@
 import React from 'react';
 // import { Row, Col } from "react-bootstrap"
-import {
-  Navbar,
-  Container,
-  Nav,
-  NavItem,
-  NavLink,
-  Offcanvas
-} from 'react-bootstrap';
+import { Navbar, Container, Nav, NavLink, Offcanvas } from 'react-bootstrap';
 import './header.scss';
 
 export const PageHeader = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/pages/home.scss';
-import { Card, Container, Col, Row } from 'react-bootstrap';
+import { Card, Container, Col, Button, Row } from 'react-bootstrap';
 
 export const Home = () => {
   return (
@@ -15,19 +15,25 @@ export const Home = () => {
             />
           </Col>
           <Col className='mt-4 my-auto'>
-            <h1>FOLLOW THE NERD</h1>
-            <br />
-            <p>
-              With our professional coaching services, you’ll have access to:
-            </p>
-            <ul className='intro-list'>
-              <li>
-                One-on-one personal session with a career professional with
-                industry experience.
-              </li>
-              <li>A custom tailored resume that tells your career story.</li>
-              <li>Double the interviews, guaranteed!</li>
-            </ul>
+            <div className='intro-text-wrapper'>
+              <h1 className='intro-call-to-action'>FOLLOW THE NERD</h1>
+              <br />
+              <p>
+                With our professional coaching services, you’ll have access to:
+              </p>
+              <ul className='intro-list'>
+                <li>
+                  One-on-one personal session with a career professional with
+                  industry experience.
+                </li>
+                <li>A custom tailored resume that tells your career story.</li>
+                <li>Double the interviews, guaranteed!</li>
+              </ul>
+
+              <Button href='/book-online' variant={'primary'} size={'lg'}>
+                Book Now
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>
@@ -42,6 +48,10 @@ export const Home = () => {
               expertise in more than 65 industries and includes certified career
               coaches, recruiters, and experienced hiring professionals.
             </p>
+
+            <Button href='/plans-pricing' variant={'light'} size={'lg'}>
+              Learn More
+            </Button>
           </Col>
           <Col className='text-center p-0 intro-image-2'>
             <img
