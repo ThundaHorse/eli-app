@@ -1,4 +1,89 @@
-.home-image {
+#intro-opening-2,
+#intro-companies,
+#how-it-works {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.home-image-1,
+.home-image-2 {
   height: 100%;
   width: 100%;
+}
+
+#intro-hero,
+#intro-opening {
+  padding: 0;
+}
+
+#intro-opening-2 {
+  background-color: cornflowerblue;
+  color: azure;
+}
+
+.intro-heading-2 {
+  text-align: center;
+}
+
+.homepage-about-companies {
+  width: 301px;
+  height: 260px;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.companies-heading {
+  line-height: 1.25em;
+  font-size: 72px;
+}
+
+.how-it-works-intro {
+  align-items: center;
+  background-color: aquamarine;
+  min-height: 360px;
+}
+
+.how-it-works-heading {
+  font-size: 88px;
+  font-weight: 700;
+}
+
+.services-list {
+  gap: 32px 32px;
+  grid-template-columns: repeat(3, minmax(220px, 616px));
+  padding: 0;
+
+  li {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    max-width: 616px;
+    min-width: 220px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #intro-opening-1 {
+    color: azure;
+    position: relative;
+    height: 100%;
+
+    .intro-image-1 {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  #intro-opening {
+    flex-direction: column-reverse;
+  }
+
+  .intro-heading-2 {
+    text-align: left;
+  }
+
+  .companies-heading {
+    line-height: 1.25em;
+    font-size: 28px;
+  }
 }
