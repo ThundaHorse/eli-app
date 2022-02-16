@@ -7,30 +7,23 @@ import { faCirclePlay, faCoffee, faCheckDouble } from '@fortawesome/free-solid-s
 export const Home = () => {
   return (
     <>
-      <Container id='intro-opening-1' fluid>
+      <Container id='intro-opening-1'>
         <Row id='intro-hero'>
-          <Col md='8' lg='8' className='mt-4 mb-4'>
+          <Col md='6' lg='6' className='mt-4 mb-4'>
             <div className='intro-image-1'>
-              <img src='/assets/images/nerd1.png' alt='hero1' />
+              <img src='/assets/images/business-banner.svg' alt='hero1' />
             </div>
           </Col>
           <Col className='my-auto hero-1'>
             <div className='intro-text-wrapper'>
               <h1 className='intro-call-to-action'>Follow the Nerd</h1>
-              <br />
-              <p>
-                With our professional coaching services, you’ll have access to:
-              </p>
-              <ul className='intro-list'>
-                <li>
-                  One-on-one personal session with a career professional with
-                  industry experience.
-                </li>
-                <li>A custom tailored resume that tells your career story.</li>
-                <li>Double the interviews, guaranteed!</li>
-              </ul>
 
-              <Button href='/book-online' variant={'primary'} size={'lg'}>
+              <p className='intro-call-to-action-body'>
+                With our professional coaching services, you'll have access to one-on-one personal session with a career professional with
+                  industry experience, a custom tailored resume that tells your career story. Double the interviews, guaranteed!
+              </p>
+
+              <Button href='/book-online' className='desktop-book-now' variant={'primary'} size={'lg'}>
                 Book Now
               </Button>
             </div>
@@ -41,7 +34,8 @@ export const Home = () => {
       <hr />
 
       <Container id='intro-opening-2' fluid>
-        <Row id='intro-opening'>
+        <Container>
+          <Row id='intro-opening'>
           <Col className='my-auto intro-heading-2 p-4'>
             <h1>You're in good hands</h1>
             <p>
@@ -51,21 +45,22 @@ export const Home = () => {
               coaches, recruiters, and experienced hiring professionals.
             </p>
 
-            <Button href='/plans-pricing' variant={'light'} size={'lg'}>
+            <Button href='/plans-pricing' variant={'outline-secondary'} size={'lg'}>
               Learn More
             </Button>
           </Col>
           <Col md='7' lg='7' className='mt-4 mb-4'>
             <div className='intro-image-2'>
-              <img src='/assets/images/hero2.png' alt='hero2' />
+              <img src='/assets/images/good-hands-intro.png' alt='good-hands-intro' />
             </div>
           </Col>
         </Row>
+        </Container>
       </Container>
 
       <hr />
 
-      <Container id='intro-companies'>
+      <Container id='intro-companies' fluid>
         <Row id='companies-heading'>
           <Col className='text-center p-2 mt-4 companies-intro'>
             <h2 className='companies-heading'>
@@ -74,7 +69,8 @@ export const Home = () => {
           </Col>
         </Row>
 
-        <Row className='mx-auto'>
+        <Container>
+          <Row className='mx-auto'>
           <Col className='consultant-desc text-center m-2 p-4'>
             <img
               className='homepage-about-companies'
@@ -108,6 +104,7 @@ export const Home = () => {
             understanding of pricing and marketing strategies. Delta Airlines
           </Col>
         </Row>
+        </Container>
       </Container>
 
       <hr />
