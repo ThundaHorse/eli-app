@@ -114,7 +114,7 @@ export const Home = () => {
           <Col md='6' lg='6'>
             <img src='/assets/images/how-it-works-1.png' className='how-it-works-img' alt='how-it-works-1' />
           </Col>
-          <Col className='mx-2'>
+          <Col className='mx-2 mb-4'>
             <h1 className='how-it-works-heading'>How it works</h1>
             <p className='how-it-works-description'>Based on your needs, we tailor our services to exceed expectations</p>
 
