@@ -1,22 +1,22 @@
 import React from 'react';
 import '../styles/pages/home.scss';
-import { Card, Container, Col, Button, Row } from 'react-bootstrap';
+import { Container, Col, Button, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlay, faCoffee, faCheckDouble } from '@fortawesome/free-solid-svg-icons'
 
 export const Home = () => {
   return (
     <>
       <Container id='intro-opening-1' fluid>
         <Row id='intro-hero'>
-          <Col md='6' lg='6' className='p-0 intro-image-1'>
-            <img
-              className='home-image-1'
-              src='https://static.wixstatic.com/media/11062b_6743da5900054f1f8e69f53302930a6af000.jpg/v1/fill/w_953,h_844,al_c,q_85,usm_0.33_1.00_0.00/11062b_6743da5900054f1f8e69f53302930a6af000.webp'
-              alt='intro'
-            />
+          <Col md='8' lg='8' className='mt-4 mb-4'>
+            <div className='intro-image-1'>
+              <img src='/assets/images/nerd1.png' alt='hero1' />
+            </div>
           </Col>
-          <Col className='mt-4 my-auto'>
+          <Col className='my-auto hero-1'>
             <div className='intro-text-wrapper'>
-              <h1 className='intro-call-to-action'>FOLLOW THE NERD</h1>
+              <h1 className='intro-call-to-action'>Follow the Nerd</h1>
               <br />
               <p>
                 With our professional coaching services, you’ll have access to:
@@ -38,10 +38,12 @@ export const Home = () => {
         </Row>
       </Container>
 
+      <hr />
+
       <Container id='intro-opening-2' fluid>
         <Row id='intro-opening'>
-          <Col md='6' lg='6' className='my-auto p-4 intro-heading-2'>
-            <h1>YOU ARE IN GOOD HANDS</h1>
+          <Col className='my-auto intro-heading-2 p-4'>
+            <h1>You're in good hands</h1>
             <p>
               Atlanta's leading career consulting service. You’ll be in good
               hands with our professional writers. Our team of writers has
@@ -53,27 +55,27 @@ export const Home = () => {
               Learn More
             </Button>
           </Col>
-          <Col className='text-center p-0 intro-image-2'>
-            <img
-              className='home-image-2'
-              src='https://static.wixstatic.com/media/nsplsh_666145665743644f4b4967~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_1906,h_1760,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01/nsplsh_666145665743644f4b4967~mv2_d_6016_4016_s_4_2.webp'
-              alt='intro-2'
-            />
+          <Col md='7' lg='7' className='mt-4 mb-4'>
+            <div className='intro-image-2'>
+              <img src='/assets/images/hero2.png' alt='hero2' />
+            </div>
           </Col>
         </Row>
       </Container>
 
-      <Container id='intro-companies' fluid>
+      <hr />
+
+      <Container id='intro-companies'>
         <Row id='companies-heading'>
-          <Col className='text-center p-0 mt-4'>
+          <Col className='text-center p-2 mt-4 companies-intro'>
             <h2 className='companies-heading'>
-              WE HAVE CONSULTANTS FROM ALL INDUSTRIES
+              We have consultants from all industries
             </h2>
           </Col>
         </Row>
 
         <Row className='mx-auto'>
-          <Col className='text-center'>
+          <Col className='consultant-desc text-center m-2 p-4'>
             <img
               className='homepage-about-companies'
               src='https://static.wixstatic.com/media/f4ad60_dec1d9a710d545d6b0bb269d919683bf~mv2.png/v1/fill/w_602,h_223,al_c,q_85,usm_0.66_1.00_0.01/adp-payroll-logo_edited.webp'
@@ -84,7 +86,7 @@ export const Home = () => {
             visualization, data science and data engineering. Automatic Data
             Processing
           </Col>
-          <Col className='text-center'>
+          <Col className='consultant-desc text-center m-2 p-4'>
             <img
               className='homepage-about-companies'
               src='https://static.wixstatic.com/media/f4ad60_e84f4253f77747c79886479b94aefad3~mv2.jpg/v1/fill/w_602,h_316,al_c,q_80,usm_0.66_1.00_0.01/default.webp'
@@ -95,7 +97,7 @@ export const Home = () => {
             Salesforce Trailhead to fully understand the fundamentals and
             principles of Salesforce architecture. Salesforce
           </Col>
-          <Col className='text-center'>
+          <Col className='consultant-desc text-center m-2 p-4'>
             <img
               className='homepage-about-companies'
               src='https://static.wixstatic.com/media/f4ad60_fc5cc435e7894f8c83f24a586921a6dc~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01/Delta-Logo.webp'
@@ -108,66 +110,52 @@ export const Home = () => {
         </Row>
       </Container>
 
-      <Container id='how-it-works' fluid>
+      <hr />
+
+      <Container id='how-it-works'>
         <Row className='how-it-works-intro'>
-          <Col className='text-center'>
-            <h1 className='how-it-works-heading'>HOW IT WORKS</h1>
+          <Col md='6' lg='6'>
+            <img src='/assets/images/how-it-works-1.png' className='how-it-works-img' alt='how-it-works-1' />
+          </Col>
+          <Col className='mx-2'>
+            <h1 className='how-it-works-heading'>How it works</h1>
+            <p className='how-it-works-description'>Based on your needs, we tailor our services to exceed expectations</p>
+
+            <ul className='services-list d-sm-block d-md-flex p-0'>
+              <li>
+                <div className='service-package'>
+                  <FontAwesomeIcon className='service-icon' icon={faCirclePlay} />
+                  <div className='service-info'>
+                    <span className='package-title'>
+                      Resume review starter package
+                    </span> | $65/hr</div>
+                </div>
+              </li>
+              <li>
+                <div className='service-package'>
+                  <FontAwesomeIcon className='service-icon' icon={faCoffee} />
+                  <div className='service-info'>
+                    <span className='package-title'>
+                      Comprehensive professional package
+                    </span> | $99/hr</div>
+                </div>
+              </li>
+              <li>
+                <div className='service-package'>
+                  <FontAwesomeIcon className='service-icon' icon={faCheckDouble} />
+                  <div className='service-info'>
+                    <span className='package-title'>
+                      Mock interview comprehensive package
+                    </span> | $149/hr</div>
+                </div>
+              </li>
+            </ul>
+
+            <Button href='/plans-pricing' variant={'secondary'} size={'lg'}>
+              Plans & Pricing
+            </Button>
           </Col>
         </Row>
-
-        <ul className='container services-list d-sm-block d-md-flex'>
-          <li>
-            <Card className='col m-3'>
-              <Card.Img
-                variant='top'
-                src='https://static.wixstatic.com/media/11062b_2cf42e9a12034a169cc52ca052e1a567~mv2.jpg/v1/fill/w_1090,h_1090,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01/11062b_2cf42e9a12034a169cc52ca052e1a567~mv2.webp'
-              />
-              <Card.Body>
-                <Card.Title>Resume Review Starter Package</Card.Title>
-                <hr />
-                <Card.Text>
-                  1hr
-                  <br />
-                  $65
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </li>
-          <li>
-            <Card className='col m-3'>
-              <Card.Img
-                variant='top'
-                src='https://static.wixstatic.com/media/690e5c88a9d14c62952dca57af039fdc.jpg/v1/fill/w_1090,h_1090,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01/690e5c88a9d14c62952dca57af039fdc.webp'
-              />
-              <Card.Body>
-                <Card.Title>Comprehensive Professional Package</Card.Title>
-                <hr />
-                <Card.Text>
-                  1hr
-                  <br />
-                  $99
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </li>
-          <li>
-            <Card className='col m-3'>
-              <Card.Img
-                variant='top'
-                src='https://static.wixstatic.com/media/nsplsh_3761616b5a64496c347667~mv2_d_6016_4000_s_4_2.jpg/v1/fill/w_1090,h_1090,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01/nsplsh_3761616b5a64496c347667~mv2_d_6016_4000_s_4_2.webp'
-              />
-              <Card.Body>
-                <Card.Title>Mock Interview Comprehensive Package</Card.Title>
-                <hr />
-                <Card.Text>
-                  1hr
-                  <br />
-                  $149
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </li>
-        </ul>
       </Container>
     </>
   );
