@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Container,
   Nav,
@@ -7,8 +7,8 @@ import {
   Form,
   FormControl,
   Navbar
-} from 'react-bootstrap';
-import './footer.scss';
+} from "react-bootstrap";
+import "./footer.scss";
 
 export const PageFooter = () => {
   return (
@@ -19,8 +19,9 @@ export const PageFooter = () => {
         <Navbar.Collapse id='navbarScroll'>
           <Nav
             className='me-auto my-2 my-lg-0'
-            style={{ maxHeight: '100px' }}
-            navbarScroll>
+            style={{ maxHeight: "100px" }}
+            navbarScroll
+          >
             <Nav.Link href='#action1'>Home</Nav.Link>
             <Nav.Link href='#action2'>Link</Nav.Link>
             <NavDropdown title='Link' id='navbarScrollingDropdown'>

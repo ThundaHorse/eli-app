@@ -1,31 +1,43 @@
-import React from 'react';
-import '../styles/pages/about.scss';
-import { Container, Col, Row } from 'react-bootstrap';
+import React from "react";
+import "../styles/pages/about.scss";
+import { Container, Col, Row } from "react-bootstrap";
 
 export const About = () => {
   return (
-    <Container id='about-us-page'>
-      <Row id='about-us-wrapper'>
-        <Col md='6' lg='6' className='p-4 about-us-text'>
-          <div className='about-us-text'>
-            <h1 className='about-us-main-heading'>About Us</h1>
-            <h2 className='about-us-sub-heading'>Follow The Nerd</h2>
-            <p className='about-us-description'>
-              Your resume is one of your most important career tools. But many
-              professionals have no idea where to start, what to include, and
-              what to leave off of their resumes. That’s where Follow the Nerd
-              comes in. We can carefully craft your career story to target the
-              job that you want to land.
+    <Container id='about-us-page' fluid>
+      <Row id='about-us-hero-brand'>
+        <Col className='my-auto text-left'>
+          <h1 className='about-us-brand-text'>About Us</h1>
+        </Col>
+      </Row>
+
+      <hr />
+
+      <Row id='about-us-hero-main'>
+        <Col className='my-auto'>
+          <div className='about-intro-wrapper'>
+            <h2 className='about-us-intro'>
+              Your resume is one of your most important career tools.
+            </h2>
+
+            <p className='about-us-sub-intro'>
+              But many professionals have no idea where to start, what to
+              include, and what to leave off of their resumes.
             </p>
           </div>
         </Col>
-        <Col md='6' lg='6' className='p-0'>
-          <div className='image-overlay'>
-            <img
-              className='about-us-image'
-              src='https://static.wixstatic.com/media/033db6cfbd844ab3991ffffc1009815c.jpg/v1/fill/w_960,h_1520,al_c,q_85,usm_0.66_1.00_0.01/Landscape%20Architecture.webp'
-              alt='about-us'
-            />
+      </Row>
+
+      <Row id='about-us-mission'>
+        <Col className='my-auto'>
+          <div className='about-us-mission-wrapper'>
+            <h3 className='about-us-mission-statement'>
+              That’s where Follow the Nerd comes in.
+            </h3>
+            <p className='about-us-mission-sub'>
+              We can carefully craft your career story to target the job that
+              you want to land.
+            </p>
           </div>
         </Col>
       </Row>

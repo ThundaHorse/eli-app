@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 // import { Row, Col } from "react-bootstrap"
-import { Navbar, Container, Nav, NavLink, Offcanvas } from 'react-bootstrap';
-import './header.scss';
+import { Navbar, Container, Nav, NavLink, Offcanvas } from "react-bootstrap";
+import "./header.scss";
 
 export const PageHeader = () => {
   return (
-    <Navbar bg='dark' variant='dark' expand={'sm'}>
+    <Navbar bg='dark' variant='dark' expand={"sm"}>
       <Container className='justify-content-end'>
         <Nav className='justify-content-center flex-grow-1 pe-3 d-none d-md-flex'>
           <NavLink href='/'>Home</NavLink>
@@ -19,11 +19,13 @@ export const PageHeader = () => {
         <Navbar.Offcanvas
           id='offcanvasNavbar'
           aria-labelledby='offcanvasNavbarLabel'
-          placement='end'>
+          placement='end'
+        >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title
               id='offcanvasNavbarLabel'
-              className='text-center mx-auto'>
+              className='text-center mx-auto'
+            >
               Log In
             </Offcanvas.Title>
           </Offcanvas.Header>

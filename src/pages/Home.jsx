@@ -1,8 +1,12 @@
-import React from 'react';
-import '../styles/pages/home.scss';
-import { Container, Col, Button, Row } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCirclePlay, faCoffee, faCheckDouble } from '@fortawesome/free-solid-svg-icons'
+import React from "react";
+import "../styles/pages/home.scss";
+import { Container, Col, Button, Row } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCirclePlay,
+  faCoffee,
+  faCheckDouble
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Home = () => {
   return (
@@ -19,11 +23,18 @@ export const Home = () => {
               <h1 className='intro-call-to-action'>Follow the Nerd</h1>
 
               <p className='intro-call-to-action-body'>
-                With our professional coaching services, you'll have access to one-on-one personal session with a career professional with
-                  industry experience, a custom tailored resume that tells your career story. Double the interviews, guaranteed!
+                With our professional coaching services, you'll have access to
+                one-on-one personal session with a career professional with
+                industry experience, a custom tailored resume that tells your
+                career story. Double the interviews, guaranteed!
               </p>
 
-              <Button href='/book-online' className='desktop-book-now' variant={'primary'} size={'lg'}>
+              <Button
+                href='/book-online'
+                className='desktop-book-now'
+                variant={"primary"}
+                size={"lg"}
+              >
                 Book Now
               </Button>
             </div>
@@ -36,25 +47,33 @@ export const Home = () => {
       <Container id='intro-opening-2' fluid>
         <Container>
           <Row id='intro-opening'>
-          <Col className='my-auto intro-heading-2 p-4'>
-            <h1>You're in good hands</h1>
-            <p>
-              Atlanta's leading career consulting service. You’ll be in good
-              hands with our professional writers. Our team of writers has
-              expertise in more than 65 industries and includes certified career
-              coaches, recruiters, and experienced hiring professionals.
-            </p>
+            <Col className='my-auto intro-heading-2 p-4'>
+              <h1>You're in good hands</h1>
+              <p>
+                Atlanta's leading career consulting service. You’ll be in good
+                hands with our professional writers. Our team of writers has
+                expertise in more than 65 industries and includes certified
+                career coaches, recruiters, and experienced hiring
+                professionals.
+              </p>
 
-            <Button href='/plans-pricing' variant={'outline-secondary'} size={'lg'}>
-              Learn More
-            </Button>
-          </Col>
-          <Col md='7' lg='7' className='mt-4 mb-4'>
-            <div className='intro-image-2'>
-              <img src='/assets/images/good-hands-intro.png' alt='good-hands-intro' />
-            </div>
-          </Col>
-        </Row>
+              <Button
+                href='/plans-pricing'
+                variant={"outline-secondary"}
+                size={"lg"}
+              >
+                Learn More
+              </Button>
+            </Col>
+            <Col md='7' lg='7' className='mt-4 mb-4'>
+              <div className='intro-image-2'>
+                <img
+                  src='/assets/images/good-hands-intro.png'
+                  alt='good-hands-intro'
+                />
+              </div>
+            </Col>
+          </Row>
         </Container>
       </Container>
 
@@ -71,39 +90,39 @@ export const Home = () => {
 
         <Container>
           <Row className='mx-auto'>
-          <Col className='consultant-desc text-center m-2 p-4'>
-            <img
-              className='homepage-about-companies'
-              src='https://static.wixstatic.com/media/f4ad60_dec1d9a710d545d6b0bb269d919683bf~mv2.png/v1/fill/w_602,h_223,al_c,q_85,usm_0.66_1.00_0.01/adp-payroll-logo_edited.webp'
-              alt='ADP'
-            />
-            <br />
-            Experienced analytics professionals to educate you on data
-            visualization, data science and data engineering. Automatic Data
-            Processing
-          </Col>
-          <Col className='consultant-desc text-center m-2 p-4'>
-            <img
-              className='homepage-about-companies'
-              src='https://static.wixstatic.com/media/f4ad60_e84f4253f77747c79886479b94aefad3~mv2.jpg/v1/fill/w_602,h_316,al_c,q_80,usm_0.66_1.00_0.01/default.webp'
-              alt='salesforce'
-            />
-            <br />
-            Architects driven to educate and grow your knowledge beyond
-            Salesforce Trailhead to fully understand the fundamentals and
-            principles of Salesforce architecture. Salesforce
-          </Col>
-          <Col className='consultant-desc text-center m-2 p-4'>
-            <img
-              className='homepage-about-companies'
-              src='https://static.wixstatic.com/media/f4ad60_fc5cc435e7894f8c83f24a586921a6dc~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01/Delta-Logo.webp'
-              alt='delta'
-            />
-            <br />
-            Strategy consultants focused in growing your knowledge and
-            understanding of pricing and marketing strategies. Delta Airlines
-          </Col>
-        </Row>
+            <Col className='consultant-desc text-center m-2 p-4'>
+              <img
+                className='homepage-about-companies'
+                src='https://static.wixstatic.com/media/f4ad60_dec1d9a710d545d6b0bb269d919683bf~mv2.png/v1/fill/w_602,h_223,al_c,q_85,usm_0.66_1.00_0.01/adp-payroll-logo_edited.webp'
+                alt='ADP'
+              />
+              <br />
+              Experienced analytics professionals to educate you on data
+              visualization, data science and data engineering. Automatic Data
+              Processing
+            </Col>
+            <Col className='consultant-desc text-center m-2 p-4'>
+              <img
+                className='homepage-about-companies'
+                src='https://static.wixstatic.com/media/f4ad60_e84f4253f77747c79886479b94aefad3~mv2.jpg/v1/fill/w_602,h_316,al_c,q_80,usm_0.66_1.00_0.01/default.webp'
+                alt='salesforce'
+              />
+              <br />
+              Architects driven to educate and grow your knowledge beyond
+              Salesforce Trailhead to fully understand the fundamentals and
+              principles of Salesforce architecture. Salesforce
+            </Col>
+            <Col className='consultant-desc text-center m-2 p-4'>
+              <img
+                className='homepage-about-companies'
+                src='https://static.wixstatic.com/media/f4ad60_fc5cc435e7894f8c83f24a586921a6dc~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01/Delta-Logo.webp'
+                alt='delta'
+              />
+              <br />
+              Strategy consultants focused in growing your knowledge and
+              understanding of pricing and marketing strategies. Delta Airlines
+            </Col>
+          </Row>
         </Container>
       </Container>
 
@@ -112,20 +131,31 @@ export const Home = () => {
       <Container id='how-it-works'>
         <Row className='how-it-works-intro'>
           <Col md='6' lg='6'>
-            <img src='/assets/images/how-it-works-1.png' className='how-it-works-img' alt='how-it-works-1' />
+            <img
+              src='/assets/images/how-it-works-1.png'
+              className='how-it-works-img'
+              alt='how-it-works-1'
+            />
           </Col>
           <Col className='mx-2 mb-4'>
             <h1 className='how-it-works-heading'>How it works</h1>
-            <p className='how-it-works-description'>Based on your needs, we tailor our services to exceed expectations</p>
+            <p className='how-it-works-description'>
+              Based on your needs, we tailor our services to exceed expectations
+            </p>
 
             <ul className='services-list d-sm-block d-md-flex p-0'>
               <li>
                 <div className='service-package'>
-                  <FontAwesomeIcon className='service-icon' icon={faCirclePlay} />
+                  <FontAwesomeIcon
+                    className='service-icon'
+                    icon={faCirclePlay}
+                  />
                   <div className='service-info'>
                     <span className='package-title'>
                       Resume review starter package
-                    </span> | $65/hr</div>
+                    </span>{" "}
+                    | $65/hr
+                  </div>
                 </div>
               </li>
               <li>
@@ -134,21 +164,28 @@ export const Home = () => {
                   <div className='service-info'>
                     <span className='package-title'>
                       Comprehensive professional package
-                    </span> | $99/hr</div>
+                    </span>{" "}
+                    | $99/hr
+                  </div>
                 </div>
               </li>
               <li>
                 <div className='service-package'>
-                  <FontAwesomeIcon className='service-icon' icon={faCheckDouble} />
+                  <FontAwesomeIcon
+                    className='service-icon'
+                    icon={faCheckDouble}
+                  />
                   <div className='service-info'>
                     <span className='package-title'>
                       Mock interview comprehensive package
-                    </span> | $149/hr</div>
+                    </span>{" "}
+                    | $149/hr
+                  </div>
                 </div>
               </li>
             </ul>
 
-            <Button href='/plans-pricing' variant={'secondary'} size={'lg'}>
+            <Button href='/plans-pricing' variant={"secondary"} size={"lg"}>
               Plans & Pricing
             </Button>
           </Col>

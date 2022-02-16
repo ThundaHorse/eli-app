@@ -1,8 +1,8 @@
-import React from 'react';
-import { PageHeader } from './components/header/index';
+import React from "react";
+import { PageHeader } from "./components/header/index";
 // import { PageFooter } from './components/footer/index';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { About, Blog, BookNow, Home, PlansAndPricing } from './pages/index';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { About, Blog, BookNow, Home, PlansAndPricing } from "./pages/index";
 
 function App() {
   return (

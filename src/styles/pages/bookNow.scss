@@ -1,4 +1,4 @@
-@import '../main.scss';
+@import "../main.scss";
 
 .tab-content {
   display: flex;
@@ -10,8 +10,50 @@
 }
 
 .service-image {
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px 10px rgb(112 144 176 / 20%);
   object-fit: contain;
+  max-height: 390px;
   width: 100%;
+}
+
+.service-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+
+  .service-title {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 36px;
+  }
+
+  .service-description {
+    font-size: 18px;
+    letter-spacing: -0.25px;
+    line-height: 28px;
+    margin-top: 24px;
+  }
+
+  .service-cost {
+    margin-top: 24px;
+
+    .service-rate {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .service-time {
+      font-size: 14px;
+    }
+  }
+
+  .book-service {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {

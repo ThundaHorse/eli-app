@@ -1,6 +1,6 @@
-import React from 'react';
-import '../styles/pages/plansAndPricing.scss';
-import { Card, Container, Col, Button, Row } from 'react-bootstrap';
+import React from "react";
+import "../styles/pages/plansAndPricing.scss";
+import { Card, Container, Col, Button, Row } from "react-bootstrap";
 
 export const PlansAndPricing = () => {
   return (
@@ -31,9 +31,10 @@ export const PlansAndPricing = () => {
                   </div>
 
                   <Button
-                    variant={'primary'}
+                    variant={"primary"}
                     className='select-page-button'
-                    size={'md'}>
+                    size={"md"}
+                  >
                     Select
                   </Button>
                 </Card.Text>
@@ -71,9 +72,10 @@ export const PlansAndPricing = () => {
                   </div>
 
                   <Button
-                    variant={'primary'}
+                    variant={"primary"}
                     className='select-page-button'
-                    size={'md'}>
+                    size={"md"}
+                  >
                     Select
                   </Button>
                 </Card.Text>
@@ -112,9 +114,10 @@ export const PlansAndPricing = () => {
                   </div>
 
                   <Button
-                    variant={'primary'}
+                    variant={"primary"}
                     className='select-page-button'
-                    size={'md'}>
+                    size={"md"}
+                  >
                     Select
                   </Button>
                 </Card.Text>
@@ -157,9 +160,10 @@ export const PlansAndPricing = () => {
                   </div>
 
                   <Button
-                    variant={'primary'}
+                    variant={"primary"}
                     className='select-page-button'
-                    size={'md'}>
+                    size={"md"}
+                  >
                     Select
                   </Button>
                 </Card.Text>

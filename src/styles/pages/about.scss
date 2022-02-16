@@ -1,54 +1,40 @@
-#about-us-page {
-  background-color: lightgray;
+@import "../main.scss";
+
+#about-us-hero-brand {
+  margin-top: 32px;
+  height: 50px;
+}
+
+#about-us-hero-main {
   margin-top: 24px;
-  overflow: hidden;
-  max-width: 950px;
-}
 
-.about-us-text {
-  margin-top: 48px;
-  padding-left: 48px;
-
-  .about-us-main-heading {
-    font-size: 72px;
-    margin-bottom: 48px;
-  }
-
-  .about-us-sub-heading {
-    font-size: 22px;
-    margin-bottom: 48px;
-  }
-
-  .about-us-description {
-    font-size: 20px;
-    font-weight: 400;
+  .about-intro-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 65vh);
+    justify-content: center;
   }
 }
 
-.about-us-image {
-  width: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
+#about-us-mission {
+  margin-top: 24px;
+  .about-us-mission-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .about-us-mission-statement {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
-  #about-us-page {
-    background: none;
-  }
-
-  #about-us-wrapper {
-    flex-direction: column-reverse;
-  }
-
-  .about-us-text {
-    margin: 0;
-    padding: 0;
-  }
-
-  .about-us-image {
-    height: 240px;
-    padding: 8px;
-    object-fit: cover;
-    object-position: 50% 50%;
+  #about-us-hero-main {
+    .about-intro-wrapper {
+      height: calc(100vh - 45vh);
+    }
   }
 }
