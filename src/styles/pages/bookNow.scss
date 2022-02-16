@@ -1,0 +1,21 @@
+@import '../main.scss';
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+}
+
+.service-descriptions {
+  margin-top: 24px;
+}
+
+.service-image {
+  object-fit: contain;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .tab-content {
+    flex-direction: row-reverse;
+  }
+}
