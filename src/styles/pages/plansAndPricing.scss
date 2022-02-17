@@ -1,55 +1,28 @@
-.card-title {
-  font-size: px2rem(20);
-  font-weight: normal;
-  text-align: center;
-}
+@import "../utilities/variables";
+@import "../base/typography";
 
-.pricing-list {
-  list-style: none;
-}
+.card {
+  border-radius: px2rem(8) !important;
+  height: px2rem(600) !important;
 
-.package-pricing {
-  height: px2rem(230);
-  padding: px2rem(25);
-
-  .price {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: px2rem(40);
+  .card-title {
+    font-size: px2rem(32) !important;
     text-align: center;
   }
 
-  .denomination {
-    font-size: px2rem(20);
+  .plan-price {
+    font-size: px2rem(24);
   }
 
-  .pricing-interval {
-    font-size: px2rem(12);
-    text-align: center;
-    margin-bottom: px2rem(6);
-  }
-
-  .pricing-blurb {
-    font-size: px2rem(14);
-    text-align: center;
-    margin-bottom: px2rem(6);
+  .plan-valid-period {
+    font-size: px2rem(16);
+    font-weight: lighter;
+    font-style: italic;
   }
 }
 
-.select-page-button {
-  width: 100%;
-}
-
-.package-content-list {
-  display: block;
-  padding: px2rem(30);
-
-  li {
-    font-size: px2rem(15);
-    font-weight: 400;
-    list-style: none;
-    margin-bottom: px2rem(8);
-    text-align: center;
+@media screen and (max-width: px2rem(480)) {
+  .packages-row {
+    flex-direction: column;
   }
 }
