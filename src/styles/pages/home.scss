@@ -1,32 +1,32 @@
-@import "../main.scss";
+@import "../utilities/variables";
 
 #intro-companies,
 #how-it-works {
-  margin-top: 24px;
-  margin-bottom: 48px;
+  margin-top: px2rem(24);
+  margin-bottom: px2rem(48);
 }
 
 #intro-opening-2,
 #how-it-works {
-  box-shadow: 5px 5px 10px 10px rgb(112 144 176 / 20%);
+  box-shadow: px2rem(5) px2rem(5) px2rem(10) px2rem(10) rgb(112 144 176 / 20%);
 }
 
 .intro-text-wrapper {
-  border-radius: 8px;
+  border-radius: px2rem(8);
   margin: auto;
-  padding: 12px;
+  padding: px2rem(12);
 
   .intro-call-to-action {
-    font-size: 50px;
+    font-size: px2rem(50);
     font-style: normal;
     font-weight: 500;
-    letter-spacing: -1.75px;
+    letter-spacing: px2rem(-1.75);
   }
 
   .intro-call-to-action-body {
-    font-size: 20px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    font-size: px2rem(20);
+    margin-top: px2rem(24);
+    margin-bottom: px2rem(24);
   }
 }
 
@@ -35,7 +35,7 @@
   overflow: hidden;
 
   img {
-    border-radius: 8px;
+    border-radius: px2rem(8);
     width: 100%;
     object-fit: contain;
   }
@@ -58,7 +58,7 @@
 
 .intro-list,
 .intro-heading-2 {
-  font-size: 18px;
+  font-size: px2rem(18);
   font-style: normal;
   font-weight: normal;
   text-align: left;
@@ -66,33 +66,33 @@
 }
 
 .homepage-about-companies {
-  width: 301px;
-  height: 260px;
+  width: px2rem(300);
+  height: px2rem(260);
   object-fit: contain;
   object-position: center center;
 }
 
 #intro-companies {
   background-image: url("../../../public/assets/images/companies-hero-edited.png");
-  background-position: right -105px;
+  background-position: right px2rem(-105);
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 8px;
+  border-radius: px2rem(8);
 }
 
 .companies-heading {
-  font-size: 52px;
-  line-height: 1.25em;
+  font-size: px2rem(52);
+  line-height: px2rem(14);
 }
 
 .consultant-desc {
   background-color: white;
-  box-shadow: 5px 10px 10px rgb(112 144 176 / 20%);
+  box-shadow: px2rem(5) px2rem(10) px2rem(10) rgb(112 144 176 / 20%);
 }
 
 .how-it-works-intro {
   align-items: center;
-  min-height: 360px;
+  min-height: px2rem(360);
 }
 
 .how-it-works-img {
@@ -101,12 +101,12 @@
 }
 
 .how-it-works-heading {
-  font-size: 32px;
+  font-size: px2rem(32);
   font-weight: 700;
 }
 
 .how-it-works-description {
-  font-size: 18px;
+  font-size: px2rem(18);
 }
 
 .services-list {
@@ -114,7 +114,7 @@
 
   li {
     list-style: none;
-    padding: 12px 12px 12px 0;
+    padding: px2rem(12) px2rem(12) px2rem(12) 0;
   }
 
   .service-package {
@@ -123,14 +123,14 @@
     flex-direction: row;
 
     .service-icon {
-      width: 16px;
-      height: 16px;
-      margin-right: 8px;
+      width: px2rem(18);
+      height: px2rem(18);
+      margin-right: px2rem(8);
     }
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: px2rem(480)) {
   #intro-opening-1 {
     height: 100%;
     position: relative;
@@ -138,15 +138,15 @@
 
   #intro-hero {
     flex-direction: column-reverse;
-    padding-top: 50px;
+    padding-top: px2rem(50);
   }
 
   .intro-text-wrapper {
     width: 100%;
 
     .intro-call-to-action {
-      line-height: 1.2em;
-      font-size: 32px;
+      line-height: px2rem(14);
+      font-size: px2rem(32);
     }
 
     .desktop-book-now {
@@ -163,12 +163,12 @@
   }
 
   .companies-heading {
-    line-height: 1.25em;
+    line-height: $font-size--base;
     font-size: 20px;
-    padding-top: 100px;
+    padding-top: px2rem(100);
   }
 
   .package-title {
-    font-size: 14px;
+    font-size: px2rem(14);
   }
 }
