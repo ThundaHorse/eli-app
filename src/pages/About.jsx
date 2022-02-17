@@ -1,48 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/pages/about.scss";
-import { Container, Col, Row } from "react-bootstrap";
+import { Parallax } from "react-materialize";
 
 export const About = () => {
+  const [hoverState, setHoverState] = React.useState();
+
+  const hoverClasses = {
+    mouseEntered: "row hoverable teal lighten-3 pulse",
+    mouseLeft: "row hoverable teal lighten-2"
+  };
+
   return (
     <>
-      <Container id='about-us-page' fluid>
-        <Row id='about-us-hero-brand'>
-          <Col className='my-auto text-left'>
-            <h1 className='about-us-brand-text'>About Us</h1>
-          </Col>
-        </Row>
+      <div className='row'>
+        <div className='col'>
+          <h3>About Us</h3>
+        </div>
+      </div>
 
-        <hr />
-
-        <Row id='about-us-hero-main'>
-          <Col className='my-auto'>
-            <div className='about-intro-wrapper'>
-              <h2 className='about-us-intro'>
+      <Parallax
+        image={<img alt='about-parallax-1' src='/assets/images/hero2.png' />}
+        options={{
+          responsiveThreshold: 0
+        }}
+      />
+      <div className='section teal lighten-2'>
+        <div className='row container'>
+          <div
+            className={`${hoverClasses[hoverState]}`}
+            onMouseEnter={() => setHoverState("mouseEntered")}
+            onMouseLeave={() => setHoverState("mouseLeft")}
+          >
+            <div className='col s12'>
+              <h2 className='center-align scale-transition'>
                 Your resume is one of your most important career tools.
               </h2>
-
-              <p className='about-us-sub-intro'>
-                But many professionals have no idea where to start, what to
-                include, and what to leave off of their resumes.
-              </p>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
+      </div>
+      <Parallax
+        image={<img alt='about-parallax-1' src='/assets/images/hero1.png' />}
+        options={{
+          responsiveThreshold: 0
+        }}
+      />
 
-        <Row id='about-us-mission'>
-          <Col className='my-auto'>
-            <div className='about-us-mission-wrapper'>
-              <h3 className='about-us-mission-statement'>
-                That’s where Follow the Nerd comes in.
-              </h3>
-              <p className='about-us-mission-sub'>
-                We can carefully craft your career story to target the job that
-                you want to land.
-              </p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <div className='row container'>
+        <div className='col'>
+          <h4>
+            But many professionals have no idea where to start, what to include,
+            and what to leave off of their resumes.
+          </h4>
+        </div>
+      </div>
+
+      <div className='row container'>
+        <div className='col'>
+          <h3>That’s where Follow the Nerd comes in.</h3>
+
+          <br />
+
+          <h4>
+            We can carefully craft your career story to target the job that you
+            want to land.
+          </h4>
+        </div>
+      </div>
     </>
   );
 };
