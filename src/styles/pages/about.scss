@@ -1,5 +1,15 @@
 @import "../main.scss";
 
+.parallax-container {
+  height: 500px;
+
+  .parallax {
+    img {
+      opacity: 1 !important;
+    }
+  }
+}
+
 #about-us-hero-brand {
   margin-top: 32px;
   height: 50px;
