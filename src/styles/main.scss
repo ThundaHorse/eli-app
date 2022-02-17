@@ -1,9 +1,14 @@
+@import "./base/index";
+@import "./utilities/index";
+@import "./pages/index";
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 hr {
-  border: 1px solid #e1e3ea !important;
+  border: px2rem(1) solid #e1e3ea !important;
 }

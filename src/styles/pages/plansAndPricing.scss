@@ -1,5 +1,5 @@
 .card-title {
-  font-size: 20px;
+  font-size: px2rem(20);
   font-weight: normal;
   text-align: center;
 }
@@ -9,31 +9,31 @@
 }
 
 .package-pricing {
-  height: 230px;
-  padding: 25px;
+  height: px2rem(230);
+  padding: px2rem(25);
 
   .price {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 40px;
+    font-size: px2rem(40);
     text-align: center;
   }
 
   .denomination {
-    font-size: 20px;
+    font-size: px2rem(20);
   }
 
   .pricing-interval {
-    font-size: 12px;
+    font-size: px2rem(12);
     text-align: center;
-    margin-bottom: 6px;
+    margin-bottom: px2rem(6);
   }
 
   .pricing-blurb {
-    font-size: 14px;
+    font-size: px2rem(14);
     text-align: center;
-    margin-bottom: 6px;
+    margin-bottom: px2rem(6);
   }
 }
 
@@ -43,13 +43,13 @@
 
 .package-content-list {
   display: block;
-  padding: 30px;
+  padding: px2rem(30);
 
   li {
-    font-size: 15px;
+    font-size: px2rem(15);
     font-weight: 400;
     list-style: none;
-    margin-bottom: 8px;
+    margin-bottom: px2rem(8);
     text-align: center;
   }
 }
