@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/pages/bookNow.scss";
-import { Container, Col, Button, Row, Tab, Nav, Tabs } from "react-bootstrap";
+import { Container, Col, Button, Row, Tab, Tabs } from "react-bootstrap";
 
 export const BookNow = () => {
   return (

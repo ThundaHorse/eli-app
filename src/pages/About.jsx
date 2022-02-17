@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/pages/about.scss";
 import { Parallax } from "react-materialize";
 
