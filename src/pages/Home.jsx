@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCirclePlay,
   faCoffee,
-  faCheckDouble
+  faCheckDouble,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const Home = () => {
@@ -68,7 +68,7 @@ export const Home = () => {
             <Col md='7' lg='7' className='mt-4 mb-4'>
               <div className='intro-image-2'>
                 <img
-                  src='/assets/images/good-hands-intro.png'
+                  src='/assets/images/good-hands-intro.webp'
                   alt='good-hands-intro'
                 />
               </div>
@@ -93,7 +93,7 @@ export const Home = () => {
             <Col className='consultant-desc text-center m-2 p-4'>
               <img
                 className='homepage-about-companies'
-                src='https://static.wixstatic.com/media/f4ad60_dec1d9a710d545d6b0bb269d919683bf~mv2.png/v1/fill/w_602,h_223,al_c,q_85,usm_0.66_1.00_0.01/adp-payroll-logo_edited.webp'
+                src='/assets/images/adp-logo.webp'
                 alt='ADP'
               />
               <br />
@@ -104,7 +104,7 @@ export const Home = () => {
             <Col className='consultant-desc text-center m-2 p-4'>
               <img
                 className='homepage-about-companies'
-                src='https://static.wixstatic.com/media/f4ad60_e84f4253f77747c79886479b94aefad3~mv2.jpg/v1/fill/w_602,h_316,al_c,q_80,usm_0.66_1.00_0.01/default.webp'
+                src='/assets/images/sales-force-logo.webp'
                 alt='salesforce'
               />
               <br />
@@ -115,7 +115,7 @@ export const Home = () => {
             <Col className='consultant-desc text-center m-2 p-4'>
               <img
                 className='homepage-about-companies'
-                src='https://static.wixstatic.com/media/f4ad60_fc5cc435e7894f8c83f24a586921a6dc~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01/Delta-Logo.webp'
+                src='/assets/images/delta-logo.webp'
                 alt='delta'
               />
               <br />
@@ -132,7 +132,7 @@ export const Home = () => {
         <Row className='how-it-works-intro'>
           <Col md='6' lg='6'>
             <img
-              src='/assets/images/how-it-works-1.png'
+              src='/assets/images/how-it-works-1.webp'
               className='how-it-works-img'
               alt='how-it-works-1'
             />

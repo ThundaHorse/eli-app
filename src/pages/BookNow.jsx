@@ -31,7 +31,7 @@ export const BookNow = () => {
             <Row className='mt-4' xs='auto' sm='auto' lg={2} md={2}>
               <Col className='my-auto'>
                 <img
-                  src='/assets/images/review.png'
+                  src='/assets/images/review.webp'
                   className='service-image'
                   alt='service-1-img'
                 />
@@ -66,7 +66,7 @@ export const BookNow = () => {
             <Row className='mt-4' xs='auto' sm='auto' lg={2} md={2}>
               <Col className='my-auto'>
                 <img
-                  src='/assets/images/comprehensive.png'
+                  src='/assets/images/comprehensive.webp'
                   className='service-image'
                   alt='service-2-img'
                 />
@@ -101,7 +101,7 @@ export const BookNow = () => {
             <Row className='mt-4' xs='auto' sm='auto' lg={2} md={2}>
               <Col className='my-auto'>
                 <img
-                  src='/assets/images/mockInterview.png'
+                  src='/assets/images/mock-interview.webp'
                   className='service-image'
                   alt='service-3-img'
                 />
