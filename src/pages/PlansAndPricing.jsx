@@ -95,11 +95,13 @@ export const PlansAndPricing = () => {
 
   return (
     <>
-      <Container id='book-now' fluid>
-        <div className='book-wrapper'>
+      <Container id='plan-and-pricing' fluid>
+        <div className='plan-and-pricing-wrapper'>
           <Row>
             <Col className='text-center'>
-              <h1 className='book-now-title'>Choose your pricing plan</h1>
+              <h1 className='plan-and-pricing-title'>
+                Choose your pricing plan
+              </h1>
             </Col>
           </Row>
 

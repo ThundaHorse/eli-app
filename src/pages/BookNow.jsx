@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/pages/bookNow.scss";
 import { Container, Col, Button, Row, Tab, Tabs } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGears } from "@fortawesome/free-solid-svg-icons";
 
 export const BookNow = () => {
   return (
@@ -8,7 +10,14 @@ export const BookNow = () => {
       <Container id='book-now'>
         <Row className='mt-4 mb-4'>
           <Col className='text-center'>
-            <h2 className='book-now-title'>Our Services</h2>
+            <div className='our-services-content'>
+              <h3 className='book-now-title'>
+                Our Services
+                <span>
+                  <FontAwesomeIcon className='services-icon' icon={faGears} />
+                </span>
+              </h3>
+            </div>
           </Col>
         </Row>
 

@@ -1,7 +1,7 @@
 @import "../utilities/variables";
 @import "../base/typography";
 
-#book-now {
+#plan-and-pricing {
   background-image: url("../../../public/assets/images/graph-graphic.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -9,12 +9,12 @@
   height: 100vh;
 }
 
-.book-wrapper {
+.plan-and-pricing-wrapper {
   backdrop-filter: blur(px2rem(8));
   height: 100%;
 }
 
-.book-now-title {
+.plan-and-pricing-title {
   color: $midnight;
   font-weight: 700;
 }
@@ -50,7 +50,7 @@
 }
 
 @media screen and (max-width: px2rem(480)) {
-  #book-now {
+  #plan-and-pricing {
     height: 100%;
   }
 
