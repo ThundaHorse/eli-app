@@ -61,7 +61,7 @@ export const PlansAndPricing = () => {
         {plans.map((plan, index) => (
           <Card
             key={index}
-            className='blue-grey darken-1 col large hoverable'
+            className='blue-grey darken-1 col s12 m5 l5 large hoverable'
             textClassName='white-text'
             title={plan.title}
           >
@@ -112,7 +112,9 @@ export const PlansAndPricing = () => {
             animationOutDuration={1000}
             isVisible={true}
           >
-            <Row className='packages-row gap-3'>{renderPlans()}</Row>
+            <Row xs={1} sm={1} md={2} lg={2} className='packages-row g-2'>
+              {renderPlans()}
+            </Row>
           </Animated>
         </div>
       </Container>
