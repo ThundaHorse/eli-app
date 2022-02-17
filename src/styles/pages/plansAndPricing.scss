@@ -1,28 +1,64 @@
 @import "../utilities/variables";
 @import "../base/typography";
 
+#book-now {
+  background-image: url("../../../public/assets/images/graph-graphic.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.book-wrapper {
+  backdrop-filter: blur(px2rem(8));
+  height: 100%;
+}
+
+.book-now-title {
+  color: $midnight;
+  font-weight: 700;
+}
+
 .card {
   border-radius: px2rem(8) !important;
   height: px2rem(600) !important;
 
   .card-title {
+    color: $gray-20;
     font-size: px2rem(32) !important;
+    font-weight: bold !important;
+    margin-top: px2rem(16);
     text-align: center;
   }
 
-  .plan-price {
-    font-size: px2rem(24);
-  }
+  .pricing-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .plan-price {
+      font-size: px2rem(24);
+      margin: 0;
+      margin-right: px2rem(8);
+    }
 
-  .plan-valid-period {
-    font-size: px2rem(16);
-    font-weight: lighter;
-    font-style: italic;
+    .plan-valid-period {
+      font-size: px2rem(16);
+      font-style: italic;
+    }
   }
 }
 
 @media screen and (max-width: px2rem(480)) {
+  #book-now {
+    height: 100%;
+  }
+
   .packages-row {
     flex-direction: column;
+  }
+
+  .card-content {
+    padding-bottom: px2rem(48) !important;
   }
 }
