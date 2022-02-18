@@ -5,8 +5,7 @@
   background-image: url("../../../public/assets/images/graph-graphic.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-size: auto;
 }
 
 .plan-and-pricing-wrapper {
@@ -14,39 +13,33 @@
   height: 100%;
 }
 
-.plan-and-pricing-title {
-  color: $midnight;
+.plan-section {
+  border-radius: px2rem(8);
+  box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  height: 50vh;
+}
+
+.plan-title {
   font-weight: 700;
 }
 
-.card {
-  border-radius: px2rem(8) !important;
-  height: px2rem(600) !important;
+.plan-price {
+  font-size: px2rem(24);
+  margin: 0;
+  margin-right: px2rem(8);
+}
 
-  .card-title {
-    color: $gray-20;
-    font-size: px2rem(32) !important;
-    font-weight: bold !important;
-    margin-top: px2rem(16);
-    text-align: center;
-  }
+.plan-valid-period {
+  font-size: px2rem(16);
+  font-style: italic;
+}
 
-  .pricing-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    .plan-price {
-      font-size: px2rem(24);
-      margin: 0;
-      margin-right: px2rem(8);
-    }
+.plan-intro {
+  font-weight: 600;
+}
 
-    .plan-valid-period {
-      font-size: px2rem(16);
-      font-style: italic;
-    }
-  }
+.plan-features {
+  margin-left: px2rem(12);
 }
 
 @media screen and (max-width: px2rem(480)) {
@@ -54,12 +47,22 @@
     height: 100%;
   }
 
+  .plan-and-pricing-title {
+    font-size: px2rem(24);
+    font-weight: 600;
+  }
+
   .packages-row {
     flex-direction: column;
     justify-content: baseline;
   }
 
-  .card-content {
-    padding-bottom: px2rem(48) !important;
+  .plan-section {
+    height: auto;
+    margin-bottom: px2rem(32);
+  }
+
+  .plan-section-row {
+    flex-direction: column;
   }
 }

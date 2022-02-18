@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/pages/plansAndPricing.scss";
 import { Container, Col, Button, Row } from "react-bootstrap";
-import { Card } from "react-materialize";
 import { Animated } from "react-animated-css";
 
 export const PlansAndPricing = () => {
@@ -15,8 +14,9 @@ export const PlansAndPricing = () => {
         "One in person 1 hour session a month",
         "24/7 access to a career professional",
         "Consulting on navigation of corporate bureaucracy",
-        "Assistance on basic technical needs",
+        "Assistance on basic technical needs"
       ],
+      bgColor: "cyan lighten-5"
     },
     {
       title: "Resume Package",
@@ -26,8 +26,9 @@ export const PlansAndPricing = () => {
       planDescription: [
         "1-on-1 guidance with a career professional",
         "In-depth review of current resume",
-        "Highlight key strengths catered towards desired industry",
+        "Highlight key strengths catered towards desired industry"
       ],
+      bgColor: "grey darken-4 text-white"
     },
     {
       title: "Comprehensive",
@@ -38,8 +39,9 @@ export const PlansAndPricing = () => {
         "1-on-1 session with a career coach",
         "Perform personality and skills assessment",
         "Recommend additional education to achieve career goals",
-        "Counsels on how to strengthen areas of weakness",
+        "Counsels on how to strengthen areas of weakness"
       ],
+      bgColor: "grey darken-4 text-white"
     },
     {
       title: "Mock Interview",
@@ -50,44 +52,77 @@ export const PlansAndPricing = () => {
         "Recorded live session from the interviewer",
         "Feedback and suggestion on areas of focus",
         "Receive insights to a successful interview response",
-        "Resume review",
+        "Resume review"
       ],
-    },
+      bgColor: "cyan lighten-5"
+    }
   ];
 
-  const renderPlans = () => {
+  const renderSections = () => {
     return (
       <>
         {plans.map((plan, index) => (
-          <Card
-            key={index}
-            className='blue-grey darken-1 col s12 m5 l5 large hoverable'
-            textClassName='white-text'
-            title={plan.title}
-          >
-            <div className='card-content'>
-              <hr />
-              <div className='pricing-info text-center'>
-                <h5 className='plan-price'>${plan.pricing}</h5>
-                <span className='plan-valid-period'>{plan.validPeriod}</span>
-              </div>
-              <hr />
-              <div className='plan-description mt-4'>
-                {plan.planDescription.map((des, idx) => (
-                  <p key={idx}>{des}</p>
-                ))}
-              </div>
-            </div>
+          <Container className={`plan-section ${plan.bgColor}`} fluid>
+            <Row className='plan-section-row container valign-wrapper h-100'>
+              {index % 2 === 0 ? (
+                <>
+                  <Col className='push-l1'>
+                    <h4 className='plan-title mb-4'>{plan.title}</h4>
+                    <h5 className='plan-price'>
+                      ${plan.pricing}{" "}
+                      <span className='plan-valid-period'>
+                        {plan.validPeriod}
+                      </span>
+                    </h5>
 
-            <div className='card-action grey darken-2'>
-              <Button
-                variant={"primary"}
-                className='book-service waves-effect waves-light float-end'
-              >
-                Book Now
-              </Button>
-            </div>
-          </Card>
+                    <Button variant='primary' className='mt-4'>
+                      Book now
+                    </Button>
+                  </Col>
+
+                  <Col className='mt-3'>
+                    <h6 className='plan-intro'>{plan.planIntro}</h6>
+                    <hr />
+                    <div className='plan-description'>
+                      <ul className='plan-features'>
+                        {plan.planDescription.map((des, idx) => (
+                          <li key={idx}>{des}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </Col>
+                </>
+              ) : (
+                <>
+                  <Col className='mt-3'>
+                    <h6 className='plan-intro'>{plan.planIntro}</h6>
+                    <hr />
+                    <div className='plan-description'>
+                      <ul className='plan-features'>
+                        {plan.planDescription.map((des, idx) => (
+                          <li key={idx}>{des}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </Col>
+
+                  <Col className='push-l1'>
+                    <h4 className='plan-title mb-4'>{plan.title}</h4>
+                    <h5 className='plan-price'>
+                      ${plan.pricing}{" "}
+                      <span className='plan-valid-period'>
+                        {plan.validPeriod}
+                      </span>
+                    </h5>
+
+                    <Button variant='primary' className='mt-4'>
+                      Book now
+                    </Button>
+                  </Col>
+                </>
+              )}
+            </Row>
+          </Container>
         ))}
       </>
     );
@@ -96,7 +131,7 @@ export const PlansAndPricing = () => {
   return (
     <>
       <Container id='plan-and-pricing' fluid>
-        <div className='plan-and-pricing-wrapper'>
+        <div className='plan-and-pricing-wrapper cyan lighten-5'>
           <Row>
             <Col className='text-center'>
               <h1 className='plan-and-pricing-title'>
@@ -112,9 +147,7 @@ export const PlansAndPricing = () => {
             animationOutDuration={1000}
             isVisible={true}
           >
-            <Row xs={1} sm={1} md={2} lg={2} className='packages-row g-2'>
-              {renderPlans()}
-            </Row>
+            {renderSections()}
           </Animated>
         </div>
       </Container>
