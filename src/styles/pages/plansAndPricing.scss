@@ -53,9 +53,11 @@
   .plan-section {
     height: auto;
     margin-bottom: px2rem(32);
-  }
 
-  .plan-section-row {
-    flex-direction: column;
+    &:nth-child(2n) {
+      .plan-section-row {
+        flex-direction: column-reverse;
+      }
+    }
   }
 }
