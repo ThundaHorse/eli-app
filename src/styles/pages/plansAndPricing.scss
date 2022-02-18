@@ -1,13 +1,6 @@
 @import "../utilities/variables";
 @import "../base/typography";
 
-#plan-and-pricing {
-  background-image: url("../../../public/assets/images/graph-graphic.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
 .plan-and-pricing-wrapper {
   backdrop-filter: blur(px2rem(8));
   height: 100%;
