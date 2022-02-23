@@ -13,18 +13,18 @@ export const About = () => {
         animationOutDuration={1000}
         isVisible={true}
       >
-        <Container fluid>
-          <Row className='about-us-heading'>
+        <Container className='p-0' fluid>
+          <Row className='teal grey lighten-5 mb-0'>
             <Col className='text-black lighten-6'>
               <h3 className='about-us-heading'>About Us</h3>
             </Col>
           </Row>
 
-          <Row className='about-us-sec center-align'>
+          <Row className='about-us-sec center-align grey lighten-4'>
             <Col>
               <img
                 className='about-us-intro-tools'
-                src='/assets/images/about-us-tools.svg'
+                src='/assets/images/about-us-clipboard.webp'
                 alt='about-us-intro-tools'
               />
             </Col>
@@ -36,7 +36,7 @@ export const About = () => {
             </Col>
           </Row>
 
-          <div className='section-wrapper hoverable'>
+          <div className='section-wrapper'>
             <Container>
               <Row className='about-us-sub-sec sub-1 center-align'>
                 <Col>
@@ -49,7 +49,7 @@ export const About = () => {
             </Container>
           </div>
 
-          <Row className='about-us-end center-align teal lighten-5'>
+          <Row className='about-us-end center-align grey lighten-4'>
             <Col>
               <h3 className='about-us-call-end center-align'>
                 That’s where Follow the Nerd comes in. We can carefully craft
