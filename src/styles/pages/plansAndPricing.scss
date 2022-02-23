@@ -13,6 +13,7 @@
 .plan-section {
   box-shadow: 0 8px 17px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   height: 50vh;
+  margin-bottom: px2rem(32) !important;
 }
 
 .plan-title {
@@ -36,6 +37,10 @@
 
 .plan-features {
   margin-left: px2rem(12);
+
+  li {
+    margin-bottom: px2rem(10);
+  }
 }
 
 @media screen and (max-width: px2rem(480)) {
@@ -54,13 +59,22 @@
   }
 
   .plan-section {
-    height: auto;
-    margin-bottom: px2rem(32);
+    height: 100%;
+
+    .plan-section-row {
+      flex-direction: column;
+    }
 
     &:nth-child(2n) {
       .plan-section-row {
         flex-direction: column-reverse;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .plan-section {
+    height: 100%;
   }
 }

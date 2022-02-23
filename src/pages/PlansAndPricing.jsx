@@ -16,7 +16,7 @@ export const PlansAndPricing = () => {
         "Consulting on navigation of corporate bureaucracy",
         "Assistance on basic technical needs",
       ],
-      bgColor: "cyan lighten-5",
+      bgColor: "blue-grey lighten-5",
     },
     {
       title: "Resume Package",
@@ -28,7 +28,7 @@ export const PlansAndPricing = () => {
         "In-depth review of current resume",
         "Highlight key strengths catered towards desired industry",
       ],
-      bgColor: "grey darken-4 text-white",
+      bgColor: "grey darken-3 text-white",
     },
     {
       title: "Comprehensive",
@@ -41,7 +41,7 @@ export const PlansAndPricing = () => {
         "Recommend additional education to achieve career goals",
         "Counsels on how to strengthen areas of weakness",
       ],
-      bgColor: "grey darken-4 text-white",
+      bgColor: "grey darken-2 text-white",
     },
     {
       title: "Mock Interview",
@@ -54,7 +54,7 @@ export const PlansAndPricing = () => {
         "Receive insights to a successful interview response",
         "Resume review",
       ],
-      bgColor: "cyan lighten-5",
+      bgColor: "blue-grey lighten-4",
     },
   ];
 
@@ -62,7 +62,7 @@ export const PlansAndPricing = () => {
     return (
       <>
         {plans.map((plan, index) => (
-          <Container className={`plan-section ${plan.bgColor}`} fluid>
+          <Container className={`plan-section ${plan.bgColor}`}>
             <Row className='plan-section-row container valign-wrapper h-100'>
               {index % 2 === 0 ? (
                 <>
@@ -131,7 +131,7 @@ export const PlansAndPricing = () => {
   return (
     <>
       <Container id='plan-and-pricing' fluid>
-        <div className='plan-and-pricing-wrapper cyan lighten-5'>
+        <div className='plan-and-pricing-wrapper blue-grey lighten-5'>
           <Row>
             <Col className='text-center'>
               <h1 className='plan-and-pricing-title'>
@@ -141,8 +141,8 @@ export const PlansAndPricing = () => {
           </Row>
 
           <Animated
-            animationIn='fadeInUp'
-            animationOut='fadeOutDown'
+            animationIn='fadeIn'
+            animationOut='fadeOut'
             animationInDuration={1000}
             animationOutDuration={1000}
             isVisible={true}
