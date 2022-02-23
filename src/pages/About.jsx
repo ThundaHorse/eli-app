@@ -21,7 +21,7 @@ export const About = () => {
           </Row>
 
           <Row className='about-us-sec center-align grey lighten-4'>
-            <Col>
+            <Col className='my-auto'>
               <img
                 className='about-us-intro-tools'
                 src='/assets/images/about-us-clipboard.webp'
