@@ -4,24 +4,6 @@ import { Row, Col, Container } from "react-bootstrap";
 import { Animated } from "react-animated-css";
 
 export const About = () => {
-  const [hoverColor, setHoverColor] = React.useState("");
-
-  const aboutUsSections = [
-    {
-      description: "Your resume is one of your most important career tools.",
-      class: "teal lighten-2",
-    },
-    {
-      description:
-        "But many professionals have no idea where to start, what to include, and what to leave off of their resumes.",
-      class: "indigo lighten-3",
-    },
-    {
-      description:
-        "That’s where Follow the Nerd comes in. We can carefully craft your career story to target the job that you want to land.",
-      class: "cyan lighten-5",
-    },
-  ];
   return (
     <>
       <Animated
