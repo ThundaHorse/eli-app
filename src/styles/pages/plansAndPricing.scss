@@ -1,6 +1,10 @@
 @import "../utilities/variables";
 @import "../base/typography";
 
+#plan-and-pricing {
+  padding: 0;
+}
+
 .plan-and-pricing-wrapper {
   backdrop-filter: blur(px2rem(8));
   height: 100%;

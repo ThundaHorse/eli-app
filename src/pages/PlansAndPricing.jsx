@@ -14,9 +14,9 @@ export const PlansAndPricing = () => {
         "One in person 1 hour session a month",
         "24/7 access to a career professional",
         "Consulting on navigation of corporate bureaucracy",
-        "Assistance on basic technical needs"
+        "Assistance on basic technical needs",
       ],
-      bgColor: "cyan lighten-5"
+      bgColor: "cyan lighten-5",
     },
     {
       title: "Resume Package",
@@ -26,9 +26,9 @@ export const PlansAndPricing = () => {
       planDescription: [
         "1-on-1 guidance with a career professional",
         "In-depth review of current resume",
-        "Highlight key strengths catered towards desired industry"
+        "Highlight key strengths catered towards desired industry",
       ],
-      bgColor: "grey darken-4 text-white"
+      bgColor: "grey darken-4 text-white",
     },
     {
       title: "Comprehensive",
@@ -39,9 +39,9 @@ export const PlansAndPricing = () => {
         "1-on-1 session with a career coach",
         "Perform personality and skills assessment",
         "Recommend additional education to achieve career goals",
-        "Counsels on how to strengthen areas of weakness"
+        "Counsels on how to strengthen areas of weakness",
       ],
-      bgColor: "grey darken-4 text-white"
+      bgColor: "grey darken-4 text-white",
     },
     {
       title: "Mock Interview",
@@ -52,10 +52,10 @@ export const PlansAndPricing = () => {
         "Recorded live session from the interviewer",
         "Feedback and suggestion on areas of focus",
         "Receive insights to a successful interview response",
-        "Resume review"
+        "Resume review",
       ],
-      bgColor: "cyan lighten-5"
-    }
+      bgColor: "cyan lighten-5",
+    },
   ];
 
   const renderSections = () => {

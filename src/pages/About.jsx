@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/pages/about.scss";
+import { Row, Col, Container } from "react-bootstrap";
 import { Animated } from "react-animated-css";
 
 export const About = () => {
@@ -8,18 +9,18 @@ export const About = () => {
   const aboutUsSections = [
     {
       description: "Your resume is one of your most important career tools.",
-      class: "teal lighten-2"
+      class: "teal lighten-2",
     },
     {
       description:
         "But many professionals have no idea where to start, what to include, and what to leave off of their resumes.",
-      class: "indigo lighten-3"
+      class: "indigo lighten-3",
     },
     {
       description:
         "That’s where Follow the Nerd comes in. We can carefully craft your career story to target the job that you want to land.",
-      class: "cyan lighten-5"
-    }
+      class: "cyan lighten-5",
+    },
   ];
   return (
     <>
@@ -30,36 +31,59 @@ export const About = () => {
         animationOutDuration={1000}
         isVisible={true}
       >
-        <div className='row about-us-heading'>
-          <div className='col text-black lighten-6'>
-            <h3>About Us</h3>
-          </div>
-        </div>
+        <Container fluid>
+          <Row className='about-us-heading'>
+            <Col className='text-black lighten-6'>
+              <h3 className='about-us-heading'>About Us</h3>
+            </Col>
+          </Row>
 
-        <div className={`container section-wrapper row mt-5 ${hoverColor} `}>
-          <div className='col s12 m4 l8'>
-            <div className='section-scroller'>
-              {aboutUsSections.map((sec, index) => (
-                <div
-                  key={index}
-                  className={`about-us-sec section ${sec.class}`}
-                  onMouseEnter={() =>
-                    setHoverColor(sec.class + " hoverable pulse")
-                  }
-                  onMouseLeave={() => setHoverColor(sec.class)}
-                >
-                  <div className='row'>
-                    <div className='col s12'>
-                      <h3 className='center-align scale-transition'>
-                        {sec.description}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <Row className='about-us-sec center-align'>
+            <Col>
+              <img
+                className='about-us-intro-tools'
+                src='/assets/images/about-us-tools.svg'
+                alt='about-us-intro-tools'
+              />
+            </Col>
+
+            <Col className='my-auto'>
+              <h3 className='about-us-call-to-action'>
+                Your resume is one of your most important career tools.
+              </h3>
+            </Col>
+          </Row>
+
+          <div className='section-wrapper hoverable'>
+            <Container>
+              <Row className='about-us-sub-sec sub-1 center-align'>
+                <Col>
+                  <h3 className='about-us-call-to-action-sub center-align'>
+                    But many professionals have no idea where to start, what to
+                    include, and what to leave off of their resumes.
+                  </h3>
+                </Col>
+              </Row>
+            </Container>
           </div>
-        </div>
+
+          <Row className='about-us-end center-align teal lighten-5'>
+            <Col>
+              <h3 className='about-us-call-end center-align'>
+                That’s where Follow the Nerd comes in. We can carefully craft
+                your career story to target the job that you want to land.
+              </h3>
+            </Col>
+
+            <Col>
+              <img
+                className='end-image'
+                src='/assets/images/superhero-about-us.svg'
+                alt='about-us-end-1'
+              />
+            </Col>
+          </Row>
+        </Container>
       </Animated>
     </>
   );

@@ -4,28 +4,55 @@
 }
 
 .about-us-heading {
-  margin-bottom: px2rem(50);
+  font-size: px2rem(32);
 }
 
-.section-wrapper {
-  border-radius: px2rem(12) !important;
-}
+.about-us-sec {
+  align-items: center;
+  box-shadow: px2rem(2) px2rem(2) px2rem(5) px2rem(5) rgb(112 144 176 / 20%);
+  height: px2rem(600);
+  justify-content: center;
 
-.section-scroller {
-  height: px2rem(500);
-  overflow-y: scroll;
-  overflow-x: hidden;
-
-  .about-us-sec {
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: px2rem(600);
+  .about-us-intro-tools {
+    width: 50%;
+    float: right;
   }
 
-  &.section-scroller::-webkit-scrollbar {
-    width: 0 !important;
+  .about-us-call-to-action {
+    font-size: px2rem(36);
+    width: 50%;
+    float: left;
+  }
+}
+
+.about-us-sub-sec {
+  align-items: center;
+  height: px2rem(500);
+  justify-content: center;
+
+  .about-us-call-to-action-sub {
+    font-size: px2rem(24);
+  }
+}
+
+.sub-1-image {
+  width: 80%;
+}
+
+.about-us-end {
+  align-items: center;
+  box-shadow: px2rem(2) px2rem(2) px2rem(5) px2rem(5) rgb(112 144 176 / 20%);
+  height: auto;
+  justify-content: center;
+
+  .about-us-call-end {
+    font-size: px2rem(24);
+    width: 50%;
+    float: right;
+  }
+
+  .end-image {
+    width: 80%;
   }
 }
 
@@ -35,10 +62,39 @@
     left: px2rem(25);
   }
 
-  .section-wrapper {
-    border-radius: px2rem(12) !important;
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
+  .about-us-sec {
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+
+    .about-us-intro-tools {
+      width: 70%;
+      float: none;
+    }
+
+    .about-us-call-to-action {
+      font-size: px2rem(24);
+      width: 100%;
+    }
+  }
+
+  .about-us-sub-sec {
+    height: auto;
+
+    .about-us-call-to-action-sub {
+      font-size: px2rem(18);
+      width: 100%;
+    }
+  }
+
+  .about-us-end {
+    flex-direction: column-reverse;
+
+    .about-us-call-end {
+      font-size: px2rem(18);
+      float: none;
+      width: auto;
+    }
   }
 }

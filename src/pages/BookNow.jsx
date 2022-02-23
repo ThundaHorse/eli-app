@@ -61,6 +61,36 @@ export const BookNow = () => {
                 </div>
               </Col>
             </Row>
+
+            <hr />
+
+            <Row className='mt-5' xs={1} sm={1} lg={2} md={2}>
+              <Col className='my-auto'>
+                <p className='service-extended-description-title'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sequi autem et veritatis temporibus exercitationem vel
+                  corporis voluptatibus nemo voluptatum ipsam libero cumque ab
+                  qui maxime soluta impedit, mollitia nesciunt.
+                </p>
+              </Col>
+
+              <Col className='my-auto'>
+                <p className='service-extended-description-title'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sequi autem et veritatis temporibus exercitationem vel
+                  corporis voluptatibus nemo voluptatum ipsam libero cumque ab
+                  qui maxime soluta impedit, mollitia nesciunt.
+                </p>
+              </Col>
+            </Row>
           </Tab>
           <Tab eventKey='second' title='Package 2'>
             <Row className='mt-4' xs='auto' sm='auto' lg={2} md={2}>
@@ -96,6 +126,36 @@ export const BookNow = () => {
                 </div>
               </Col>
             </Row>
+
+            <hr />
+
+            <Row className='mt-5' xs={1} sm={1} lg={2} md={2}>
+              <Col className='my-auto'>
+                <p className='service-extended-description-title'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sequi autem et veritatis temporibus exercitationem vel
+                  corporis voluptatibus nemo voluptatum ipsam libero cumque ab
+                  qui maxime soluta impedit, mollitia nesciunt.
+                </p>
+              </Col>
+
+              <Col className='my-auto'>
+                <p className='service-extended-description-title'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sequi autem et veritatis temporibus exercitationem vel
+                  corporis voluptatibus nemo voluptatum ipsam libero cumque ab
+                  qui maxime soluta impedit, mollitia nesciunt.
+                </p>
+              </Col>
+            </Row>
           </Tab>
           <Tab eventKey='third' title='Package 3'>
             <Row className='mt-4' xs='auto' sm='auto' lg={2} md={2}>
@@ -129,6 +189,36 @@ export const BookNow = () => {
                     Book Now
                   </Button>
                 </div>
+              </Col>
+            </Row>
+
+            <hr />
+
+            <Row className='mt-5' xs={1} sm={1} lg={2} md={2}>
+              <Col className='my-auto'>
+                <p className='service-extended-description-title'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sequi autem et veritatis temporibus exercitationem vel
+                  corporis voluptatibus nemo voluptatum ipsam libero cumque ab
+                  qui maxime soluta impedit, mollitia nesciunt.
+                </p>
+              </Col>
+
+              <Col className='my-auto'>
+                <p className='service-extended-description-title'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quam, sequi autem et veritatis temporibus exercitationem vel
+                  corporis voluptatibus nemo voluptatum ipsam libero cumque ab
+                  qui maxime soluta impedit, mollitia nesciunt.
+                </p>
               </Col>
             </Row>
           </Tab>

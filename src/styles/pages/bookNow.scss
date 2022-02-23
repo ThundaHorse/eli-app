@@ -66,6 +66,11 @@
   }
 }
 
+.service-extended-description-title {
+  font-weight: bold;
+  font-size: px2rem(32);
+}
+
 @media screen and (max-width: px2rem(480)) {
   .tab-content {
     flex-direction: row-reverse;
