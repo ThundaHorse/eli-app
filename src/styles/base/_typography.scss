@@ -69,6 +69,7 @@ a {
 
 a.link-black {
   color: $midnight;
+  text-decoration: none;
 
   &:hover {
     color: $midnight;

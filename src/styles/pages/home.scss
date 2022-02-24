@@ -73,7 +73,11 @@
 }
 
 #intro-companies {
-  background-image: url("../../../public/assets/images/company-hero-light.webp");
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.596),
+      rgba(255, 255, 255, 0.596)
+    ),
+    url("../../../public/assets/images/company-hero-light.webp");
   background-position: right px2rem(-105);
   background-repeat: no-repeat;
   background-size: contain;
@@ -83,6 +87,7 @@
 .companies-heading {
   font-size: px2rem(52);
   line-height: px2rem(14);
+  font-weight: 500;
 }
 
 .consultant-desc {
@@ -138,7 +143,6 @@
 
   #intro-hero {
     flex-direction: column-reverse;
-    padding-top: px2rem(50);
   }
 
   .intro-text-wrapper {
@@ -163,8 +167,8 @@
   }
 
   .companies-heading {
-    line-height: $font-size--base;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: px2rem(28);
     padding-top: px2rem(100);
   }
 
