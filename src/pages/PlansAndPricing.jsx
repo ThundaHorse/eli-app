@@ -66,7 +66,7 @@ export const PlansAndPricing = () => {
             <Row className='plan-section-row container valign-wrapper h-100'>
               {index % 2 === 0 ? (
                 <>
-                  <Col className='push-l1'>
+                  <Col className='pull-l1'>
                     <h4 className='plan-title mb-4'>{plan.title}</h4>
                     <h5 className='plan-price'>
                       ${plan.pricing}{" "}
