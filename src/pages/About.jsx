@@ -16,7 +16,7 @@ export const About = () => {
         <Container className='p-0' fluid>
           <Row className='teal grey lighten-5 mb-0'>
             <Col className='text-black lighten-6'>
-              <h3 className='about-us-heading'>About Us</h3>
+              <h3 className='about-us-heading'>What is Follow The Nerd?</h3>
             </Col>
           </Row>
 
@@ -31,7 +31,9 @@ export const About = () => {
 
             <Col className='my-auto'>
               <h3 className='about-us-call-to-action'>
-                Your resume is one of your most important career tools.
+                FTN is a philosophy our company stands by to enable and teach
+                clients who may not be experts or experienced in their
+                professional career.
               </h3>
             </Col>
           </Row>
@@ -41,8 +43,11 @@ export const About = () => {
               <Row className='about-us-sub-sec sub-1 center-align'>
                 <Col>
                   <h3 className='about-us-call-to-action-sub center-align'>
-                    But many professionals have no idea where to start, what to
-                    include, and what to leave off of their resumes.
+                    Our mission is to support and guide individuals who possess
+                    a hunger and passion to grow their careers. We wanted to
+                    help those from non-target schools and non-traditional
+                    backgrounds by leveraging our background and experience to
+                    be the Nerds they could follow and learn from
                   </h3>
                 </Col>
               </Row>
@@ -52,8 +57,9 @@ export const About = () => {
           <Row className='about-us-end center-align grey lighten-4'>
             <Col>
               <h3 className='about-us-call-end center-align'>
-                That’s where Follow the Nerd comes in. We can carefully craft
-                your career story to target the job that you want to land.
+                We've helped thousands secure offers from top companies
+                including Salesforce, Microsoft, Deloitte, Slalom, and many
+                more!
               </h3>
             </Col>
 
