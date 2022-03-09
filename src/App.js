@@ -7,8 +7,9 @@ import { About, BookNow, Home, PlansAndPricing, Program } from "./pages/index";
 function App() {
   return (
     <div className='App'>
-      <PageHeader />
       <Router>
+      <PageHeader />
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/book-now' element={<BookNow />} />
@@ -16,8 +17,9 @@ function App() {
           <Route path=':title' element={<Program />} />
           <Route path='/about' element={<About />} />
         </Routes>
-      </Router>
       <PageFooter />
+
+      </Router>
     </div>
   );
 }

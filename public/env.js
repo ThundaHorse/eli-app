@@ -11,7 +11,7 @@ window.env = {
   "HOMEBREW_REPOSITORY": "/opt/homebrew",
   "TMPDIR": "/var/folders/py/xrs489y53cg63ttx77d87n7h0000gn/T/",
   "npm_config_global_prefix": "/usr/local",
-  "TERM_PROGRAM_VERSION": "1.65.0",
+  "TERM_PROGRAM_VERSION": "1.65.1",
   "ZPFX": "/Users/abrahamkim/.local/share/zinit/polaris",
   "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
   "COLOR": "1",
