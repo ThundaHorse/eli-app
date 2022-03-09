@@ -109,15 +109,15 @@ export const PageFooter = () => {
       <div className='footer'>
         <Container>
           <div className='footer-flex'>
-            <div className='footer-column first'>
+            <div className='footer-column first text-center'>
               <div className='logo-footer'>
                 <img
-                  src='https://assets-global.website-files.com/6107d4b379e3293a0c62f588/612a374d9b510908b06271a9_wonsulting%20logo%20footer.png'
+                  src='/assets/images/superhero-about-us.svg'
                   loading='lazy'
-                  alt='Wonsulting'
+                  alt='Follow the Nerd'
                 ></img>
               </div>
-              First
+              Follow the Nerd
             </div>
             <div className='footer-column'>
               <div className='footer-title'>Information</div>

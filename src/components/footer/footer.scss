@@ -2,7 +2,7 @@
 @import "../../styles/base";
 
 .footer {
-  background-color: rgb(166, 197, 255);
+  box-shadow: 0 px2rem(-10) px2rem(10) 0 rgb(0 0 0 / 20%);
   height: px2rem(300);
   padding-bottom: 20%;
   padding-top: px2rem(20);
@@ -54,8 +54,12 @@
       font-weight: 400;
       line-height: px2rem(16);
       margin-bottom: px2rem(20);
-      text-decoration: none;
       -webkit-box-align: center;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
   }
 
@@ -96,6 +100,10 @@
       -webkit-box-align: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
+
+      img {
+        width: 75%;
+      }
     }
 
     .footer-column {
