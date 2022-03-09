@@ -1,8 +1,111 @@
+@import "../../styles/utilities";
+@import "../../styles/base";
+
 .footer {
-  background-color: cornflowerblue;
-  bottom: 0;
-  height: 80px;
-  left: 0;
+  background-color: rgb(166, 197, 255);
+  height: px2rem(300);
+  padding-bottom: 20%;
+  padding-top: px2rem(20);
   position: static;
-  right: 0;
+}
+
+.footer-flex {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+
+  .footer-column.first {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+    .logo-footer img {
+      border: 0;
+      max-width: 100%;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+    .footer-title {
+      color: #2a8176;
+      font-size: px2rem(16);
+      line-height: px2rem(18);
+      margin-top: 0;
+      margin-bottom: px2rem(20);
+      text-align: left;
+    }
+
+    .footer-link {
+      align-items: center;
+      display: flex;
+      font-size: px2rem(14);
+      font-weight: 400;
+      line-height: px2rem(16);
+      margin-bottom: px2rem(20);
+      text-decoration: none;
+      -webkit-box-align: center;
+    }
+  }
+
+  .footer-column.last {
+    .footer-body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .footer-mail {
+        color: inherit;
+        margin-left: px2rem(10);
+        text-decoration: none;
+
+        &:hover {
+          color: #2a8176;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: px2rem(480)) {
+  .footer {
+    padding-top: px2rem(40);
+  }
+
+  .footer-flex {
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+
+    .footer-column.first {
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: px2rem(40);
+      width: 100%;
+      -webkit-box-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+    }
+
+    .footer-column {
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      width: 50%;
+    }
+
+    .footer-column.last {
+      width: auto;
+    }
+  }
 }

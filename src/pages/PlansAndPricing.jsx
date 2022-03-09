@@ -7,39 +7,41 @@ export const PlansAndPricing = () => {
   const plans = [
     {
       title: "Help me Package",
-      pricing: "9.99",
+      pricing: "50",
       validPeriod: "Every month",
-      planIntro: "Having trouble navigating your work environment?",
+      planIntro:
+        "Join our FTN community where you can grow with our Nerds and previous clients",
       planDescription: [
-        "One in person 1 hour session a month",
-        "24/7 access to a career professional",
-        "Consulting on navigation of corporate bureaucracy",
+        "Assistance with navigating corporate bureaucracy",
+        "24/7 access to all Nerds to guide you through any escalations or issues you may face on a day to day basis",
+        "Guidance on key deliverables to ensure your quality of work reflects your professional brand",
         "Assistance on basic technical needs",
       ],
-      bgColor: "blue-grey lighten-5",
+      bgColor: "grey darken-4 text-white",
     },
     {
       title: "Resume Package",
-      pricing: "99",
+      pricing: "500",
       validPeriod: "Valid for one month",
-      planIntro: "Perfect to get started on your career journey!",
+      planIntro:
+        "Receive a FTN certified resume to land you the job of your dreams",
       planDescription: [
-        "1-on-1 guidance with a career professional",
+        "Understand and learn how to phrase and document key points needed for resumes for future knowledge",
         "In-depth review of current resume",
-        "Highlight key strengths catered towards desired industry",
+        "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
       ],
       bgColor: "grey darken-3 text-white",
     },
     {
-      title: "Comprehensive",
-      pricing: "125",
+      title: "Find me a job!",
+      pricing: "700",
       validPeriod: "Valid for one month",
-      planIntro: "Looking for a promotion? Start here!",
+      planIntro:
+        "A personal Nerd to be by your side through the start to end process of your job search",
       planDescription: [
-        "1-on-1 session with a career coach",
-        "Perform personality and skills assessment",
-        "Recommend additional education to achieve career goals",
-        "Counsels on how to strengthen areas of weakness",
+        "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
+        "Bi-weekly interview prep sessions to ensure your on top of all potential behavioral questions that could be asked ",
+        "Consultation on navigating offers and identify your best fit",
       ],
       bgColor: "grey darken-2 text-white",
     },
@@ -55,6 +57,13 @@ export const PlansAndPricing = () => {
         "Resume review",
       ],
       bgColor: "blue-grey lighten-4",
+    },
+    {
+      title: "Portfolio Revamp",
+      pricing: "800",
+      validPeriod: "until completion",
+      planIntro: "lorem",
+      planDescription: [],
     },
   ];
 

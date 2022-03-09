@@ -1,0 +1,46 @@
+@import "../utilities/variables";
+@import "../base/typography";
+
+#plan-and-pricing {
+  padding: px2rem(40) 0 px2rem(40) 0;
+}
+
+.plan-title {
+  font-weight: 700;
+}
+
+.plan-price {
+  font-size: px2rem(24);
+  margin: 0;
+  margin-right: px2rem(8);
+}
+
+.plan-valid-period {
+  font-size: px2rem(16);
+  font-style: italic;
+}
+
+.plan-intro {
+  font-weight: 600;
+}
+
+.plan-features {
+  li {
+    margin-bottom: px2rem(10);
+  }
+}
+
+@media screen and (max-width: px2rem(480)) {
+  #plan-and-pricing {
+    height: 100%;
+  }
+
+  .plan-row {
+    flex-direction: column;
+  }
+
+  .plan-title {
+    font-size: px2rem(24);
+    font-weight: 600;
+  }
+}

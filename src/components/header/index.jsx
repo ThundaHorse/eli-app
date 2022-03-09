@@ -11,15 +11,20 @@ export const PageHeader = () => {
         <NavLink className='navbar-brand d-flex d-md-none left-align' href='/'>
           <FontAwesomeIcon className='mx-3' icon={faFaceGrinWink} />
         </NavLink>
-        <Nav className='flex-grow-1 pe-3 d-none d-md-flex'>
+        <Nav className='flex-grow-1 d-none d-md-flex'>
           <NavLink className='navbar-brand' href='/'>
             Follow the Nerd
             <FontAwesomeIcon className='mx-3' icon={faSmile} />
           </NavLink>
-          <NavLink href='/book-now'>Book Now</NavLink>
-          <NavLink href='/plans-pricing'>Plans & Pricing</NavLink>
-          <NavLink href='/blog'>Blog</NavLink>
-          <NavLink href='/about'>About</NavLink>
+          <NavLink href='/book-now' className='mx-5'>
+            Book Now
+          </NavLink>
+          <NavLink href='/plans-pricing' className='mx-5'>
+            Plans & Pricing
+          </NavLink>
+          <NavLink href='/about' className='mx-5'>
+            About
+          </NavLink>
         </Nav>
         <Navbar.Toggle aria-controls='offcanvasNavbar' />
         <Navbar.Offcanvas
@@ -48,13 +53,6 @@ export const PageHeader = () => {
                 className='link-black offcanvas-link btn-large btn blue-grey lighten-5'
               >
                 Plans & Pricing
-              </a>
-
-              <a
-                href='/blog'
-                className='link-black offcanvas-link btn-large btn blue-grey lighten-5'
-              >
-                Blog
               </a>
 
               <a

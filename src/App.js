@@ -1,8 +1,8 @@
 import React from "react";
 import { PageHeader } from "./components/header/index";
-// import { PageFooter } from './components/footer/index';
+import { PageFooter } from './components/footer/index';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { About, Blog, BookNow, Home, PlansAndPricing } from "./pages/index";
+import { About, BookNow, Home, PlansAndPricing, Program } from "./pages/index";
 
 function App() {
   return (
@@ -12,12 +12,12 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/book-now' element={<BookNow />} />
-          <Route path='/blog' element={<Blog />} />
           <Route path='/plans-pricing' element={<PlansAndPricing />} />
+          <Route path=':title' element={<Program />} />
           <Route path='/about' element={<About />} />
         </Routes>
       </Router>
-      {/* <PageFooter /> */}
+      <PageFooter />
     </div>
   );
 }
