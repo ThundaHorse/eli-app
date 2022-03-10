@@ -9,8 +9,12 @@
   font-family: "Montserrat", sans-serif !important;
 }
 
-hr {
-  border: px2rem(1) solid #e1e3ea !important;
-  margin-top: px2rem(24);
-  margin-bottom: px2rem(24);
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
 }

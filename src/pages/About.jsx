@@ -13,30 +13,28 @@ export const About = () => {
         animationOutDuration={1000}
         isVisible={true}
       >
-        <Container className='p-0' fluid>
-          <Row className='teal grey lighten-5 mb-0'>
-            <Col className='text-black lighten-6'>
-              <h3 className='about-us-heading'>What is Follow The Nerd?</h3>
-            </Col>
-          </Row>
+        <Container id='about-us-page' fluid>
+          <div className='about-us-sec grey lighten-4'>
+            <Container>
+              <Row className='about-us-sec-row-1'>
+                <Col className='about-sec-1'>
+                  <img
+                    className='about-us-intro-tools'
+                    src='/assets/images/about-us-clipboard.webp'
+                    alt='about-us-intro-tools'
+                  />
+                </Col>
 
-          <Row className='about-us-sec center-align grey lighten-4'>
-            <Col className='my-auto'>
-              <img
-                className='about-us-intro-tools'
-                src='/assets/images/about-us-clipboard.webp'
-                alt='about-us-intro-tools'
-              />
-            </Col>
-
-            <Col className='my-auto'>
-              <h3 className='about-us-call-to-action'>
-                FTN is a philosophy our company stands by to enable and teach
-                clients who may not be experts or experienced in their
-                professional career.
-              </h3>
-            </Col>
-          </Row>
+                <Col className='about-sec-2'>
+                  <h3 className='about-us-call-to-action'>
+                    FTN is a philosophy our company stands by to enable and
+                    teach clients who may not be experts or experienced in their
+                    professional career.
+                  </h3>
+                </Col>
+              </Row>
+            </Container>
+          </div>
 
           <div className='section-wrapper'>
             <Container>
@@ -54,16 +52,16 @@ export const About = () => {
             </Container>
           </div>
 
-          <Row className='about-us-end center-align grey lighten-4'>
-            <Col>
-              <h3 className='about-us-call-end center-align'>
+          <Row className='about-us-end grey lighten-4'>
+            <Col className='about-us-end-sec-1'>
+              <h3 className='about-us-call-end flow-text'>
                 We've helped thousands secure offers from top companies
                 including Salesforce, Microsoft, Deloitte, Slalom, and many
                 more!
               </h3>
             </Col>
 
-            <Col>
+            <Col className='about-us-end-sec-2'>
               <img
                 className='end-image'
                 src='/assets/images/superhero-about-us.svg'

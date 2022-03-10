@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import "../styles/pages/program.scss";
 
 export const Program = () => {
   const location = useLocation();
@@ -23,20 +24,25 @@ export const Program = () => {
   const renderPlan = () => {
     return (
       <>
-        <Container>
-          <Row className='valign-wrapper plan-row h-100'>
-            <Col className='push-l1'>
-              <h4 className='plan-title mb-4'>{plan.title}</h4>
-              <h5 className='plan-price'>
-                ${plan.pricing}{" "}
-                <span className='plan-valid-period'>{plan.validPeriod}</span>
-              </h5>
-            </Col>
+        <Row className='plan-title-and-price'>
+          <Col className='text-center'>
+            <h4 className='plan-title'>{plan.title}</h4>
+            <h5 className='plan-price'>
+              ${plan.pricing}{" "}
+              <span className='plan-valid-period'>{plan.validPeriod}</span>
+            </h5>
+          </Col>
+        </Row>
 
-            <Col className='mt-3'>
-              <h6 className='plan-intro'>{plan.planIntro}</h6>
-              <hr />
+        <Row className='plan-row'>
+          <Col>
+            <h6 className='plan-intro text-center flow-text'>
+              {plan.planIntro}
+            </h6>
+          </Col>
 
+          <Col>
+            <blockquote>
               <div className='plan-description'>
                 <ul className='plan-features'>
                   {plan.planDescription.map((des, idx) => (
@@ -44,16 +50,16 @@ export const Program = () => {
                   ))}
                 </ul>
               </div>
-            </Col>
-          </Row>
-        </Container>
+            </blockquote>
+          </Col>
+        </Row>
       </>
     );
   };
 
   return (
-    <Container id='plan-and-pricing' fluid>
-      <>{renderPlan()}</>
+    <Container id='plan-page'>
+      <div className='plan-wrapper'>{renderPlan()}</div>
     </Container>
   );
 };

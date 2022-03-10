@@ -8,20 +8,31 @@
 }
 
 .about-us-sec {
-  align-items: center;
   box-shadow: px2rem(2) px2rem(2) px2rem(5) px2rem(5) rgb(112 144 176 / 20%);
   height: px2rem(600);
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+
+  .about-sec-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .about-sec-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
   .about-us-intro-tools {
-    width: 40%;
-    float: right;
+    width: 50%;
+    height: auto;
   }
 
   .about-us-call-to-action {
     font-size: px2rem(36);
-    width: 50%;
-    float: left;
   }
 }
 
@@ -57,16 +68,35 @@
 }
 
 @media screen and (max-width: px2rem(480)) {
+  #about-us-page {
+    margin-top: px2rem(24);
+  }
+
   .about-us-heading {
     font-size: px2rem(20);
     left: px2rem(25);
   }
 
   .about-us-sec {
-    align-items: center;
-    flex-direction: column;
     height: auto;
-    justify-content: center;
+    margin-bottom: px2rem(24);
+
+    .about-us-sec-row-1 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-sec-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: px2rem(12);
+    }
+
+    .about-sec-2 {
+      text-align: center;
+    }
 
     .about-us-intro-tools {
       width: 70%;
@@ -90,11 +120,26 @@
 
   .about-us-end {
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    .about-us-end-sec-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: px2rem(12);
+      text-align: center;
+    }
+
+    .about-us-end-sec-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     .about-us-call-end {
       font-size: px2rem(18);
       float: none;
-      width: auto;
     }
   }
 }

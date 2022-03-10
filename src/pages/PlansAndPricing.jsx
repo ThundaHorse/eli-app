@@ -63,7 +63,7 @@ export const PlansAndPricing = () => {
       pricing: "800",
       validPeriod: "until completion",
       planIntro: "lorem",
-      planDescription: [],
+      planDescription: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
     },
   ];
 
@@ -71,12 +71,12 @@ export const PlansAndPricing = () => {
     return (
       <>
         {plans.map((plan, index) => (
-          <Container className={`plan-section ${plan.bgColor}`}>
+          <Container className={`plan-section ${plan.bgColor}`} key={index}>
             <Row className='plan-section-row container valign-wrapper h-100'>
               {index % 2 === 0 ? (
                 <>
                   <Col className='pull-l1'>
-                    <h4 className='plan-title mb-4'>{plan.title}</h4>
+                    <h4 className='plan-title mt-4 mb-4'>{plan.title}</h4>
                     <h5 className='plan-price'>
                       ${plan.pricing}{" "}
                       <span className='plan-valid-period'>
@@ -116,7 +116,7 @@ export const PlansAndPricing = () => {
                   </Col>
 
                   <Col className='push-l1'>
-                    <h4 className='plan-title mb-4'>{plan.title}</h4>
+                    <h4 className='plan-title mt-4 mb-4'>{plan.title}</h4>
                     <h5 className='plan-price'>
                       ${plan.pricing}{" "}
                       <span className='plan-valid-period'>
@@ -139,8 +139,8 @@ export const PlansAndPricing = () => {
 
   return (
     <>
-      <Container id='plan-and-pricing' fluid>
-        <div className='plan-and-pricing-wrapper blue-grey lighten-5'>
+      <Container id='plan-and-pricing' className='blue-grey lighten-5' fluid>
+        <div className='plan-and-pricing-wrapper'>
           <Row>
             <Col className='text-center'>
               <h1 className='plan-and-pricing-title'>

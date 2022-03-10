@@ -8,7 +8,7 @@ export const BookNow = () => {
   return (
     <>
       <Container id='book-now'>
-        <Row className='mt-4 mb-4'>
+        <Row>
           <Col className='text-center'>
             <div className='our-services-content'>
               <h3 className='book-now-title'>

@@ -1,8 +1,19 @@
-@import "../utilities/variables";
-@import "../base/typography";
+#plan-page {
+  padding-bottom: px2rem(48);
+  padding-top: px2rem(48);
+}
 
-#plan-and-pricing {
-  padding: px2rem(40) 0 px2rem(40) 0;
+.plan-title-and-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: px2rem(48);
+}
+
+.plan-wrapper {
+  height: 100%;
+  margin-top: px2rem(48);
 }
 
 .plan-title {
@@ -24,15 +35,27 @@
   font-weight: 600;
 }
 
+.plan-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: px2rem(32);
+}
+
 .plan-features {
   li {
     margin-bottom: px2rem(10);
   }
 }
 
-@media screen and (max-width: px2rem(480)) {
-  #plan-and-pricing {
+@media screen and (max-width: 480px) {
+  #plan-page {
     height: 100%;
+    padding: 0;
+  }
+
+  .plan-title-and-price {
+    padding-top: 0;
   }
 
   .plan-row {

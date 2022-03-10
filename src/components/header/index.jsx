@@ -1,70 +1,51 @@
 import React from "react";
-import { Navbar, Container, Nav, NavLink, Offcanvas } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFaceGrinWink, faSmile } from "@fortawesome/free-regular-svg-icons";
+import { faFaceGrinWink } from "@fortawesome/free-regular-svg-icons";
+import { Navbar, NavItem } from "react-materialize";
 import "./header.scss";
 
 export const PageHeader = () => {
   return (
-    <Navbar variant='light' expand={"sm"}>
-      <Container>
-        <NavLink className='navbar-brand d-flex d-md-none left-align' href='/'>
+    <>
+      <Navbar
+        alignLinks='left'
+        id='mobile-nav'
+        brand={
+          <a href='/' className='right'>
+            <FontAwesomeIcon
+              className='brand-logo hide-on-large-only'
+              icon={faFaceGrinWink}
+            />
+          </a>
+        }
+        menuIcon={<img src='/assets/images/menu_black_24dp.svg' alt='Menu' />}
+        options={{
+          draggable: true,
+          edge: "left",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          outDuration: 200,
+          preventScrolling: true,
+        }}
+        className='navbar blue-grey lighten-5'
+      >
+        <NavItem href='/' className='nav-link navbar-brand'>
+          Follow the Nerd
           <FontAwesomeIcon className='mx-3' icon={faFaceGrinWink} />
-        </NavLink>
-        <Nav className='flex-grow-1 d-none d-md-flex'>
-          <NavLink className='navbar-brand' href='/'>
-            Follow the Nerd
-            <FontAwesomeIcon className='mx-3' icon={faSmile} />
-          </NavLink>
-          <NavLink href='/book-now' className='mx-5'>
-            Book Now
-          </NavLink>
-          <NavLink href='/plans-pricing' className='mx-5'>
-            Plans & Pricing
-          </NavLink>
-          <NavLink href='/about' className='mx-5'>
-            About
-          </NavLink>
-        </Nav>
-        <Navbar.Toggle aria-controls='offcanvasNavbar' />
-        <Navbar.Offcanvas
-          className='grey lighten-4'
-          id='offcanvasNavbar'
-          aria-labelledby='offcanvasNavbarLabel'
-          placement='end'
-        >
-          <Offcanvas.Header className='z-depth-1' closeButton>
-            <Offcanvas.Title id='offcanvasNavbarLabel' className='mx-4'>
-              Follow the Nerd
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-
-          <Offcanvas.Body className='mx-4'>
-            <Nav className='justify-content-center flex-grow-1'>
-              <a
-                href='/book-now'
-                className='link-black offcanvas-link btn-large btn blue-grey lighten-5'
-              >
-                Book Now
-              </a>
-
-              <a
-                href='/plans-pricing'
-                className='link-black offcanvas-link btn-large btn blue-grey lighten-5'
-              >
-                Plans & Pricing
-              </a>
-
-              <a
-                href='/about'
-                className='link-black offcanvas-link btn-large btn blue-grey lighten-5'
-              >
-                About
-              </a>
-            </Nav>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
-      </Container>
-    </Navbar>
+        </NavItem>
+        <NavItem href='/book-now' className='nav-link mx-5'>
+          Book Now
+        </NavItem>
+        <NavItem href='/plans-pricing' className='nav-link mx-5'>
+          Plans & Pricing
+        </NavItem>
+        <NavItem href='/about' className='nav-link mx-5'>
+          About
+        </NavItem>
+      </Navbar>
+    </>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
@@ -9,141 +8,161 @@ export const PageFooter = () => {
   const renderPlanLinks = () => {
     return (
       <>
-        <div className='footer-link'>
-          <Link
-            to={"/help-me"}
-            state={{
-              title: "Help me Package",
-              pricing: "50",
-              validPeriod: "Every month",
-              planIntro:
-                "Join our FTN community where you can grow with our Nerds and previous clients",
-              planDescription: [
-                "Assistance with navigating corporate bureaucracy",
-                "24/7 access to all Nerds to guide you through any escalations or issues you may face on a day to day basis",
-                "Guidance on key deliverables to ensure your quality of work reflects your professional brand",
-                "Assistance on basic technical needs",
-              ],
-            }}
-          >
-            Help me Package
-          </Link>
-        </div>
-        <div className='footer-link'>
-          <Link
-            to={"/resume-package"}
-            state={{
-              title: "Resume Package",
-              pricing: "500",
-              validPeriod: "Valid for one month",
-              planIntro:
-                "Receive a FTN certified resume to land you the job of your dreams",
-              planDescription: [
-                "Understand and learn how to phrase and document key points needed for resumes for future knowledge",
-                "In-depth review of current resume",
-                "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
-              ],
-            }}
-          >
-            Resume Package
-          </Link>
-        </div>
-        <div className='footer-link'>
-          <Link
-            to={"/find-me-a-job"}
-            state={{
-              title: "Find me a Job!",
-              pricing: "700",
-              validPeriod: "Valid for one month",
-              planIntro:
-                "A personal Nerd to be by your side through the start to end process of your job search",
-              planDescription: [
-                "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
-                "Bi-weekly interview prep sessions to ensure your on top of all potential behavioral questions that could be asked ",
-                "Consultation on navigating offers and identify your best fit",
-              ],
-            }}
-          >
-            Find me a Job!
-          </Link>
-        </div>
-        <div className='footer-link'>
-          <Link
-            to={"/mock-interview"}
-            state={{
-              title: "Mock Interview",
-              pricing: "149",
-              validPeriod: "Valid for one week",
-              planIntro: "Ready to ace your interview? This is for you",
-              planDescription: [
-                "Recorded live session from the interviewer",
-                "Feedback and suggestion on areas of focus",
-                "Receive insights to a successful interview response",
-                "Resume review",
-              ],
-            }}
-          >
-            Mock Interview
-          </Link>
-        </div>
-        <div className='footer-link'>
-          <Link
-            to={"/portfolio-revamp"}
-            state={{
-              title: "Portfolio Revamp",
-              pricing: "800",
-              validPeriod: "Until completion",
-              planIntro: "Lorem Ipsum",
-              planDescription: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
-            }}
-          >
-            Portfolio Revamp
-          </Link>
-        </div>
+        <ul className='text-center'>
+          <li className='footer-link'>
+            <Link
+              to={"/help-me"}
+              state={{
+                title: "Help me Package",
+                pricing: "50",
+                validPeriod: "Every month",
+                planIntro:
+                  "Join our FTN community where you can grow with our Nerds and previous clients",
+                planDescription: [
+                  "Assistance with navigating corporate bureaucracy",
+                  "24/7 access to all Nerds to guide you through any escalations or issues you may face on a day to day basis",
+                  "Guidance on key deliverables to ensure your quality of work reflects your professional brand",
+                  "Assistance on basic technical needs",
+                ],
+              }}
+              className='plan-link'
+            >
+              Help me Package
+            </Link>
+          </li>
+          <li className='footer-link'>
+            <Link
+              to={"/resume-package"}
+              state={{
+                title: "Resume Package",
+                pricing: "500",
+                validPeriod: "Valid for one month",
+                planIntro:
+                  "Receive a FTN certified resume to land you the job of your dreams",
+                planDescription: [
+                  "Understand and learn how to phrase and document key points needed for resumes for future knowledge",
+                  "In-depth review of current resume",
+                  "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
+                ],
+              }}
+              className='plan-link'
+            >
+              Resume Package
+            </Link>
+          </li>
+          <li className='footer-link'>
+            <Link
+              to={"/find-me-a-job"}
+              state={{
+                title: "Find me a Job!",
+                pricing: "700",
+                validPeriod: "Valid for one month",
+                planIntro:
+                  "A personal Nerd to be by your side through the start to end process of your job search",
+                planDescription: [
+                  "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
+                  "Bi-weekly interview prep sessions to ensure your on top of all potential behavioral questions that could be asked ",
+                  "Consultation on navigating offers and identify your best fit",
+                ],
+              }}
+              className='plan-link'
+            >
+              Find me a Job!
+            </Link>
+          </li>
+          <li className='footer-link'>
+            <Link
+              to={"/mock-interview"}
+              state={{
+                title: "Mock Interview",
+                pricing: "149",
+                validPeriod: "Valid for one week",
+                planIntro: "Ready to ace your interview? This is for you",
+                planDescription: [
+                  "Recorded live session from the interviewer",
+                  "Feedback and suggestion on areas of focus",
+                  "Receive insights to a successful interview response",
+                  "Resume review",
+                ],
+              }}
+              className='plan-link'
+            >
+              Mock Interview
+            </Link>
+          </li>
+          <li className='footer-link'>
+            <Link
+              to={"/portfolio-revamp"}
+              state={{
+                title: "Portfolio Revamp",
+                pricing: "800",
+                validPeriod: "Until completion",
+                planIntro: "Lorem Ipsum",
+                planDescription: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
+              }}
+              className='plan-link'
+            >
+              Portfolio Revamp
+            </Link>
+          </li>
+        </ul>
       </>
     );
   };
 
   return (
     <>
-      <div className='footer'>
-        <Container>
-          <div className='footer-flex'>
-            <div className='footer-column first text-center'>
-              <div className='logo-footer'>
+      <div className='footer-placeholder' />
+      <footer className='main-footer orange lighten-5'>
+        <div className='container'>
+          <div className='row d-block'>
+            <div className='col s12 m12 l5 hide-on-small-only footer-column-first'>
+              <div className='footer-brand-logo'>
+                <h5 className='footer-title text-center'>Follow the Nerd</h5>
                 <img
+                  className='footer-logo'
                   src='/assets/images/superhero-about-us.svg'
                   loading='lazy'
                   alt='Follow the Nerd'
                 ></img>
               </div>
-              Follow the Nerd
             </div>
-            <div className='footer-column'>
-              <div className='footer-title'>Information</div>
-              <div className='footer-link'>Something</div>
-              <div className='footer-link'>Something</div>
-              <div className='footer-link'>Something</div>
-            </div>
-            <div className='footer-column'>
-              <div className='footer-title'>Programs</div>
+            <div className='col s6 m4 l3 footer-column'>
+              <h5 className='footer-title text-center'>Programs</h5>
               {renderPlanLinks()}
             </div>
-            <div className='footer-column last'>
-              <h3 className='footer-title'>CONTACT</h3>
-              <div className='footer-body'>
+            <div className='col s6 m4 l2 footer-column'>
+              <h5 className='footer-title text-center'>Info</h5>
+              <ul className='text-center'>
+                <li className='footer-link'>
+                  <div className='plan-link'>Something</div>
+                </li>
+                <li className='footer-link'>
+                  <div className='plan-link'>Something</div>
+                </li>
+                <li className='footer-link'>
+                  <div className='plan-link'>Something</div>
+                </li>
+                <li className='footer-link'>
+                  <div className='plan-link'>Something</div>
+                </li>
+              </ul>
+            </div>
+            <div className='col s12 m4 l2 footer-column-last'>
+              <h5 className='footer-title text-center'>Contact Us</h5>
+              <div className='contact-us'>
                 <FontAwesomeIcon icon={faEnvelope} />
                 <a
                   href='mailto:followthenerd1@gmail.com'
                   className='footer-mail'
                 >
-                  followthenerd1@gmail.com
+                  Follow the Nerd
                 </a>
               </div>
             </div>
           </div>
-        </Container>
-      </div>
+        </div>
+      </footer>
     </>
   );
 };

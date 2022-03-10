@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./styles/main.scss";
 
@@ -11,7 +10,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min.js";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// Routing
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+// Components
+import { PageHeader } from "./components/header";
+import { PageFooter } from "./components/footer";
+import { About, BookNow, Home, PlansAndPricing, Program } from "./pages/index";
+
+const routing = (
+    <Router>
+        <PageHeader />
+            <main>
+                <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/book-now' element={<BookNow />} />
+                <Route path='/plans-pricing' element={<PlansAndPricing />} />
+                <Route path=':title' element={<Program />} />
+                <Route path='/about' element={<About />} />
+            </Routes>
+            </main>
+        <PageFooter />
+    </Router>
+)
+
+ReactDOM.render(routing, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
