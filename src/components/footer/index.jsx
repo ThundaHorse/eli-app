@@ -32,6 +32,26 @@ export const PageFooter = () => {
           </li>
           <li className='footer-link'>
             <Link
+              to={"/mock-interview"}
+              state={{
+                title: "Mock Interview",
+                pricing: "149",
+                validPeriod: "Valid for one week",
+                planIntro: "Ready to ace your interview? This is for you",
+                planDescription: [
+                  "Recorded live session from the interviewer",
+                  "Feedback and suggestion on areas of focus",
+                  "Receive insights to a successful interview response",
+                  "Resume review",
+                ],
+              }}
+              className='plan-link'
+            >
+              Mock Interview
+            </Link>
+          </li>
+          <li className='footer-link'>
+            <Link
               to={"/resume-package"}
               state={{
                 title: "Resume Package",
@@ -72,33 +92,17 @@ export const PageFooter = () => {
           </li>
           <li className='footer-link'>
             <Link
-              to={"/mock-interview"}
-              state={{
-                title: "Mock Interview",
-                pricing: "149",
-                validPeriod: "Valid for one week",
-                planIntro: "Ready to ace your interview? This is for you",
-                planDescription: [
-                  "Recorded live session from the interviewer",
-                  "Feedback and suggestion on areas of focus",
-                  "Receive insights to a successful interview response",
-                  "Resume review",
-                ],
-              }}
-              className='plan-link'
-            >
-              Mock Interview
-            </Link>
-          </li>
-          <li className='footer-link'>
-            <Link
               to={"/portfolio-revamp"}
               state={{
                 title: "Portfolio Revamp",
                 pricing: "800",
                 validPeriod: "Until completion",
-                planIntro: "Lorem Ipsum",
-                planDescription: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
+                planIntro: "Ready to seek new opportunities and career growth?",
+                planDescription: [
+                  "Your portfolio defines your brand!",
+                  "Have a design certified Nerd review and revamp your portfolio to highlight your key strengths and abilities.",
+                  "They’ll partner with you to guide you along your journey and support you through your development process to ensure a high quality product.",
+                ],
               }}
               className='plan-link'
             >

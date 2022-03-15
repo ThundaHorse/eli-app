@@ -15,9 +15,9 @@ export const PlansAndPricing = () => {
         "Assistance with navigating corporate bureaucracy",
         "24/7 access to all Nerds to guide you through any escalations or issues you may face on a day to day basis",
         "Guidance on key deliverables to ensure your quality of work reflects your professional brand",
-        "Assistance on basic technical needs"
+        "Assistance on basic technical needs",
       ],
-      bgColor: "grey darken-4 text-white"
+      bgColor: "grey darken-4 text-white",
     },
     {
       title: "Mock Interview",
@@ -28,9 +28,9 @@ export const PlansAndPricing = () => {
         "Recorded live session from the interviewer",
         "Feedback and suggestion on areas of focus",
         "Receive insights to a successful interview response",
-        "Resume review"
+        "Resume review",
       ],
-      bgColor: "blue-grey lighten-4"
+      bgColor: "blue-grey lighten-4",
     },
     {
       title: "Resume Package",
@@ -41,9 +41,9 @@ export const PlansAndPricing = () => {
       planDescription: [
         "Understand and learn how to phrase and document key points needed for resumes for future knowledge",
         "In-depth review of current resume",
-        "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry"
+        "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
       ],
-      bgColor: "grey darken-3 text-white"
+      bgColor: "grey darken-3 text-white",
     },
     {
       title: "Find me a job!",
@@ -54,9 +54,9 @@ export const PlansAndPricing = () => {
       planDescription: [
         "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
         "Bi-weekly interview prep sessions to ensure your on top of all potential behavioral questions that could be asked ",
-        "Consultation on navigating offers and identify your best fit"
+        "Consultation on navigating offers and identify your best fit",
       ],
-      bgColor: "grey darken-2 text-white"
+      bgColor: "grey darken-2 text-white",
     },
     {
       title: "Portfolio Revamp",
@@ -66,9 +66,9 @@ export const PlansAndPricing = () => {
       planDescription: [
         "Your portfolio defines your brand!",
         "Have a design certified Nerd review and revamp your portfolio to highlight your key strengths and abilities.",
-        "They’ll partner with you to guide you along your journey and support you through your development process to ensure a high quality product."
-      ]
-    }
+        "They’ll partner with you to guide you along your journey and support you through your development process to ensure a high quality product.",
+      ],
+    },
   ];
 
   const renderSections = () => {
@@ -143,7 +143,7 @@ export const PlansAndPricing = () => {
 
   return (
     <>
-      <Container id='plan-and-pricing' className='blue-grey lighten-5' fluid>
+      <Container id='plan-and-pricing' fluid>
         <div className='plan-and-pricing-wrapper'>
           <Row>
             <Col className='text-center'>
