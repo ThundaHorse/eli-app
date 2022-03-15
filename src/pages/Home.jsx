@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCirclePlay,
   faCoffee,
-  faCheckDouble,
+  faCheckDouble
 } from "@fortawesome/free-solid-svg-icons";
 
 export const Home = () => {
