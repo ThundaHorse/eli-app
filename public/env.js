@@ -3,7 +3,7 @@ window.env = {
   "TERM_PROGRAM": "vscode",
   "NODE": "/usr/local/bin/node",
   "INIT_CWD": "/Users/abrahamkim/Documents/GitHub/eli-app",
-  "_P9K_TTY": "/dev/ttys001",
+  "_P9K_TTY": "/dev/ttys000",
   "TERM": "xterm-256color",
   "ASDF_DIR": "/opt/homebrew/opt/asdf/libexec",
   "SHELL": "/bin/zsh",

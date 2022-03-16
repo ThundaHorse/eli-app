@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCirclePlay,
   faCoffee,
-  faCheckDouble
+  faCheckDouble,
+  faMap,
+  faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const Home = () => {
@@ -137,7 +139,7 @@ export const Home = () => {
               alt='how-it-works-1'
             />
           </Col>
-          <Col className='mx-2 mb-4'>
+          <Col className='mx-2 mb-4 mt-4'>
             <h1 className='how-it-works-heading'>How it works</h1>
             <p className='how-it-works-description'>
               Based on your needs, we tailor our services to exceed expectations
@@ -153,8 +155,7 @@ export const Home = () => {
                   <div className='service-info'>
                     <span className='package-title'>
                       Resume review starter package
-                    </span>{" "}
-                    | $65/hr
+                    </span>
                   </div>
                 </div>
               </li>
@@ -164,8 +165,7 @@ export const Home = () => {
                   <div className='service-info'>
                     <span className='package-title'>
                       Comprehensive professional package
-                    </span>{" "}
-                    | $99/hr
+                    </span>
                   </div>
                 </div>
               </li>
@@ -178,8 +178,25 @@ export const Home = () => {
                   <div className='service-info'>
                     <span className='package-title'>
                       Mock interview comprehensive package
-                    </span>{" "}
-                    | $149/hr
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className='service-package'>
+                  <FontAwesomeIcon className='service-icon' icon={faQuestion} />
+                  <div className='service-info'>
+                    <span className='package-title'>Job search package</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className='service-package'>
+                  <FontAwesomeIcon className='service-icon' icon={faMap} />
+                  <div className='service-info'>
+                    <span className='package-title'>
+                      Portfolio revamp package
+                    </span>
                   </div>
                 </div>
               </li>
