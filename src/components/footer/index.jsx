@@ -131,28 +131,11 @@ export const PageFooter = () => {
                 ></img>
               </div>
             </div>
-            <div className='col s6 m4 l3 footer-column'>
+            <div className='col s12 m6 l4 footer-column'>
               <h5 className='footer-title text-center'>Programs</h5>
               {renderPlanLinks()}
             </div>
-            <div className='col s6 m4 l2 footer-column'>
-              <h5 className='footer-title text-center'>Info</h5>
-              <ul className='text-center'>
-                <li className='footer-link'>
-                  <div className='plan-link'>Something</div>
-                </li>
-                <li className='footer-link'>
-                  <div className='plan-link'>Something</div>
-                </li>
-                <li className='footer-link'>
-                  <div className='plan-link'>Something</div>
-                </li>
-                <li className='footer-link'>
-                  <div className='plan-link'>Something</div>
-                </li>
-              </ul>
-            </div>
-            <div className='col s12 m4 l2 footer-column-last'>
+            <div className='col s12 m6 l3 footer-column-last'>
               <h5 className='footer-title text-center'>Contact Us</h5>
               <div className='contact-us'>
                 <FontAwesomeIcon icon={faEnvelope} />

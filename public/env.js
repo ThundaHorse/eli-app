@@ -65,7 +65,7 @@ window.env = {
   "npm_node_execpath": "/usr/local/bin/node",
   "npm_config_prefix": "/usr/local",
   "COLORTERM": "truecolor",
-  "REACT_APP_GMAIL_CLIENT_ID": "",
-  "REACT_APP_GMAIL_API_KEY": "",
+  "REACT_APP_GMAIL_CLIENT_ID": "123",
+  "REACT_APP_GMAIL_API_KEY": "123",
   "REACT_APP_TEST_KEY": "123"
 };
