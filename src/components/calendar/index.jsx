@@ -115,7 +115,6 @@ export const BookNowCalendar = () => {
         {
           email: process.env.REACT_APP_DEFAULT_EMAIL,
           responseStatus: "accepted",
-          self: true,
         },
         { email: response.getEmail() },
       ],
@@ -131,7 +130,6 @@ export const BookNowCalendar = () => {
       .catch((error) => {
         console.log(error);
       });
-    window.location.reload();
   };
 
   const handleSelectChange = (e) => {
