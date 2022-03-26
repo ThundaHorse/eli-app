@@ -3,7 +3,7 @@ window.env = {
   "TERM_PROGRAM": "vscode",
   "NODE": "/usr/local/bin/node",
   "INIT_CWD": "/Users/abrahamkim/Documents/GitHub/eli-app",
-  "_P9K_TTY": "/dev/ttys000",
+  "_P9K_TTY": "/dev/ttys001",
   "TERM": "xterm-256color",
   "ASDF_DIR": "/opt/homebrew/opt/asdf/libexec",
   "SHELL": "/bin/zsh",
@@ -66,6 +66,11 @@ window.env = {
   "npm_config_prefix": "/usr/local",
   "COLORTERM": "truecolor",
   "REACT_APP_GMAIL_CLIENT_ID": "123",
-  "REACT_APP_GMAIL_API_KEY": "123",
-  "REACT_APP_TEST_KEY": "123"
+  "REACT_APP_CLIENT_ID": "140393330357-pqh65paojbart959kiheb7103cic3s5q.apps.googleusercontent.com",
+  "REACT_APP_CALENDAR_ID": "vno36vo30kkt64v836365adrn0@group.calendar.google.com",
+  "REACT_APP_CALENDAR_API_KEY": "AIzaSyAZKMdG46FQugVw9_e2BGVtx1jSwhMxjBY",
+  "REACT_APP_GOOGLE_DISCOVERY_DOCS": "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
+  "REACT_APP_GOOGLE_SCOPE": "https://www.googleapis.com/auth/calendar",
+  "REACT_APP_TEST_KEY": "123",
+  "REACT_APP_DEFAULT_EMAIL": "followthenerd1@gmail.com"
 };

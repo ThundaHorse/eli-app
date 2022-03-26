@@ -13,7 +13,7 @@ export const BookNow = () => {
       pricing: "50",
       pricingPeriod: "month",
       description:
-        "Grow a professional relationship with your own personal Nerd who can coach and guide you through your first internship or first steps in your career. Your Nerd will provide specific industry knowledge and their personal experiences to sharpen your business acumen and add to your skillset. You will have 24 hours access to your nerd and bi weekly check-ins with them."
+        "Grow a professional relationship with your own personal Nerd who can coach and guide you through your first internship or first steps in your career. Your Nerd will provide specific industry knowledge and their personal experiences to sharpen your business acumen and add to your skillset. You will have 24 hours access to your nerd and bi weekly check-ins with them.",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export const BookNow = () => {
       pricing: "149",
       pricingPeriod: "week",
       description:
-        "Go through a FTN certified mock trial with a certified Nerd with previous recruiting / interview experience to give you a real life mock interview to give you the closest experience possible to prepare you for the real deal! Your nerd will work with you to structure key behavioral questions in our FTN methodology, so you won’t even have to think during the interview!"
+        "Go through a FTN certified mock trial with a certified Nerd with previous recruiting / interview experience to give you a real life mock interview to give you the closest experience possible to prepare you for the real deal! Your nerd will work with you to structure key behavioral questions in our FTN methodology, so you won’t even have to think during the interview!",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export const BookNow = () => {
       pricing: "500",
       pricingPeriod: "month",
       description:
-        "Partner with your own personal Nerd to review the current state of your resume and go through consultation services to identify areas of improvement and gaps to build a stronger and more desired resume. Your Nerd will go through iterative sessions with you to align on your next career move and update your resume to reflect your true passions and career goals!"
+        "Partner with your own personal Nerd to review the current state of your resume and go through consultation services to identify areas of improvement and gaps to build a stronger and more desired resume. Your Nerd will go through iterative sessions with you to align on your next career move and update your resume to reflect your true passions and career goals!",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ export const BookNow = () => {
       pricing: "700",
       pricingPeriod: "month",
       description:
-        "Get the full FTN experience by working with your personal Nerd to revamp your resume to ensure your value is clearly displayed in your resume. Go through multiple mock interview sessions to practice your behavioral questions and body language to fully prepare you for a natural and comfortable interview process!"
+        "Get the full FTN experience by working with your personal Nerd to revamp your resume to ensure your value is clearly displayed in your resume. Go through multiple mock interview sessions to practice your behavioral questions and body language to fully prepare you for a natural and comfortable interview process!",
     },
     {
       id: 5,
@@ -49,8 +49,8 @@ export const BookNow = () => {
       pricing: "800",
       pricingPeriod: "completion",
       description:
-        "Your portfolio defines your brand! Have a design certified Nerd review and revamp your portfolio to highlight your key strengths and abilities. They’ll partner with you to guide you along your journey and support you through your development process to ensure a high quality product."
-    }
+        "Your portfolio defines your brand! Have a design certified Nerd review and revamp your portfolio to highlight your key strengths and abilities. They’ll partner with you to guide you along your journey and support you through your development process to ensure a high quality product.",
+    },
   ];
 
   const renderTabs = () => {
@@ -86,7 +86,11 @@ export const BookNow = () => {
                       </span>
                     </div>
 
-                    <Button className='book-service' variant={"primary"}>
+                    <Button
+                      href='/book-online'
+                      className='book-service'
+                      variant={"primary"}
+                    >
                       Book Now
                     </Button>
                   </div>

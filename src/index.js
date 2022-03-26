@@ -17,6 +17,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { PageHeader } from "./components/header";
 import { PageFooter } from "./components/footer";
 import { About, BookNow, Home, PlansAndPricing, Program } from "./pages/index";
+import { BookOnline } from "./pages/BookOnline";
 
 const routing = (
     <Router>
@@ -28,6 +29,7 @@ const routing = (
                 <Route path='/plans-pricing' element={<PlansAndPricing />} />
                 <Route path=':title' element={<Program />} />
                 <Route path='/about' element={<About />} />
+                <Route path='/book-online' element={<BookOnline />} />
             </Routes>
             </main>
         <PageFooter />
