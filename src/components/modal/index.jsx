@@ -3,17 +3,17 @@ import { Select } from "react-materialize";
 import TimePicker from "react-bootstrap-time-picker";
 import { Form, Modal, Button, Row, Col } from "react-bootstrap";
 
-export const BookNowModal = (props) => {
+export const BookNowModal = ({ ...props }) => {
   const [state, setState] = useState({
     summary: [],
     description: "",
     start: {
       dateTime: "08:00",
-      timeZone: "",
+      timeZone: "America/New_York",
     },
     end: {
       dateTime: null,
-      timeZone: "",
+      timeZone: "America/New_York",
     },
     recurrence: ["RRULE:FREQ=DAILY;COUNT=2"],
     attendees: [{ email: process.env.REACT_APP_DEFAULT_EMAIL }, { email: "" }],
@@ -25,6 +25,7 @@ export const BookNowModal = (props) => {
       // ],
     },
     errors: "",
+    dateStr: props.dayInfo.dateStr,
   });
   const [validated, setValidated] = useState(false);
 
@@ -38,6 +39,10 @@ export const BookNowModal = (props) => {
 
     if (state.summary.length > 0) {
       setValidated(true);
+      setState({
+        ...state,
+      });
+      props.setDayInfo(state);
     } else {
       setValidated(false);
       setState({
@@ -45,8 +50,6 @@ export const BookNowModal = (props) => {
         errors: "Please select a service",
       });
     }
-
-    console.log(state);
   };
 
   const handleSelectChange = (e) => {
@@ -70,9 +73,11 @@ export const BookNowModal = (props) => {
       ...state,
       start: {
         dateTime: e,
+        timeZone: "America/New_York",
       },
       end: {
         dateTime: e + state.summary.length * 3600,
+        timeZone: "America/New_York",
       },
     });
   };

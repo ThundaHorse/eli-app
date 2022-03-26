@@ -88,7 +88,11 @@ export const PlansAndPricing = () => {
                       </span>
                     </h5>
 
-                    <Button variant='primary' className='mt-4'>
+                    <Button
+                      href='/book-online'
+                      variant='primary'
+                      className='mt-4'
+                    >
                       Book now
                     </Button>
                   </Col>
@@ -128,7 +132,11 @@ export const PlansAndPricing = () => {
                       </span>
                     </h5>
 
-                    <Button variant='primary' className='mt-4'>
+                    <Button
+                      href='/book-online'
+                      variant='primary'
+                      className='mt-4'
+                    >
                       Book now
                     </Button>
                   </Col>
