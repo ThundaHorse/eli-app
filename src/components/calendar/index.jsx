@@ -29,13 +29,6 @@ export const BookNowCalendar = () => {
   const [validated, setValidated] = useState(false);
   const calendarRef = useRef(null);
 
-  const gapiConfig = {
-    clientId: process.env.REACT_APP_CLIENT_ID,
-    apiKey: process.env.REACT_APP_CALENDAR_API_KEY,
-    discoveryDocs: process.env.REACT_APP_GOOGLE_DISCOVERY_DOCS,
-    scopes: process.env.REACT_APP_GOOGLE_SCOPE,
-  };
-
   const eventClicked = (info) => {
     info.jsEvent.preventDefault();
 
