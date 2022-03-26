@@ -14,9 +14,6 @@
 # Env
 /public/env.js
 
-# google
-apiGoogleconfig.json
-
 # misc
 .DS_Store
 .env
