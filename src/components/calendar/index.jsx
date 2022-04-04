@@ -11,7 +11,9 @@ import "./bookNowCalendar.scss";
 
 export const BookNowCalendar = () => {
   const [showModal, setShowModal] = useState(false);
-  const [showDateStyles, setShowDateStyles] = useState({});
+  const [showDateStyles, setShowDateStyles] = useState({
+    display: "none",
+  });
   const [dayInfo, setDayInfo] = useState({
     summary: [],
     description: "",
