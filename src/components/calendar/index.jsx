@@ -5,12 +5,13 @@ import interactionPlugin from "@fullcalendar/interaction";
 import React, { useState, useRef } from "react";
 import { Select } from "react-materialize";
 import TimePicker from "react-bootstrap-time-picker";
-import { Form, Modal, Button, Row, Col } from "react-bootstrap";
+import { Form, Modal, Button, Row, Col, Popover } from "react-bootstrap";
 import ApiCalendar from "react-google-calendar-api";
 import "./bookNowCalendar.scss";
 
 export const BookNowCalendar = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showDateStyles, setShowDateStyles] = useState({});
   const [dayInfo, setDayInfo] = useState({
     summary: [],
     description: "",
@@ -25,16 +26,27 @@ export const BookNowCalendar = () => {
     errors: "",
     dateStr: "",
   });
+  const [eventInfo, setEventInfo] = useState({
+    description: "",
+    start: "",
+    end: "",
+  });
   const [signedIn, setSignedIn] = useState(false);
   const [validated, setValidated] = useState(false);
   const calendarRef = useRef(null);
 
   const eventClicked = (info) => {
     info.jsEvent.preventDefault();
-
-    if (info.event.url) {
-      window.open(info.event.url);
-    }
+    let eventRect = info.el.getBoundingClientRect();
+    setShowDateStyles({
+      top: eventRect.top - 10 + "px",
+      left: eventRect.right + "px",
+    });
+    setEventInfo({
+      description: info.event.title,
+      start: info.event.start.toLocaleTimeString(),
+      end: info.event.end.toLocaleTimeString(),
+    });
   };
 
   const handleDateClick = (info) => {
@@ -220,9 +232,18 @@ export const BookNowCalendar = () => {
           selectAllow={true}
           dateClick={handleDateClick}
           eventClick={eventClicked}
+          eventMouseLeave={() => setShowDateStyles({ display: "none" })}
         />
 
         <br />
+
+        <Popover style={showDateStyles}>
+          <Popover.Header>{eventInfo.description}</Popover.Header>
+          <Popover.Body>
+            <p>From: {eventInfo.start}</p>
+            <p>To: {eventInfo.end}</p>
+          </Popover.Body>
+        </Popover>
 
         <Modal id='add-event-modal' className='mt-4' size='lg' show={showModal}>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
