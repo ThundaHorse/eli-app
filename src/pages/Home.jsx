@@ -39,7 +39,7 @@ export const Home = () => {
     return (
       <>
         {companies.map((comp, idx) => (
-          <Col className='consultant-desc text-center m-2 p-4'>
+          <Col className='consultant-desc text-center m-2 p-4' key={idx}>
             <img
               className='homepage-about-companies'
               src={comp.image}
