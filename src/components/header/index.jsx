@@ -1,8 +1,8 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFaceGrinWink } from "@fortawesome/free-regular-svg-icons";
-import { Navbar, NavItem } from "react-materialize";
-import "./header.scss";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFaceGrinWink } from '@fortawesome/free-regular-svg-icons';
+import { Navbar, NavItem } from 'react-materialize';
+import './header.scss';
 
 export const PageHeader = () => {
   return (
@@ -21,7 +21,7 @@ export const PageHeader = () => {
         menuIcon={<img src='/assets/images/menu_black_24dp.svg' alt='Menu' />}
         options={{
           draggable: true,
-          edge: "left",
+          edge: 'left',
           inDuration: 250,
           onCloseEnd: null,
           onCloseStart: null,
@@ -30,7 +30,7 @@ export const PageHeader = () => {
           outDuration: 200,
           preventScrolling: true,
         }}
-        className='navbar blue-grey lighten-5'
+        className='navbar blue lighten-5'
       >
         <NavItem href='/' className='nav-link navbar-brand'>
           Follow the Nerd

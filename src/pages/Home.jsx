@@ -1,16 +1,58 @@
-import React from "react";
-import "../styles/pages/home.scss";
-import { Container, Col, Button, Row } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import '../styles/pages/home.scss';
+import { Container, Col, Button, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCirclePlay,
   faCoffee,
   faCheckDouble,
   faMap,
   faQuestion,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
 export const Home = () => {
+  const companies = [
+    {
+      id: 1,
+      description:
+        'Experienced analytics professionals to educate you on data visualization, data science and data engineering. Automatic Data Processing',
+      company: 'ADP',
+      image: '/assets/images/logos/adp-logo.webp',
+    },
+    {
+      id: 2,
+      description:
+        'Architects driven to educate and grow your knowledge beyond Salesforce Trailhead to fully understand the fundamentals and principles of Salesforce architecture. Salesforce',
+      company: 'Salesforce',
+      image: '/assets/images/logos/sales-force-logo.webp',
+    },
+    {
+      id: 3,
+      description:
+        'Strategy consultants focused in growing your knowledge and understanding of pricing and marketing strategies. Delta Airlines',
+      company: 'Delta',
+      image: '/assets/images/logos/delta-logo.webp',
+    },
+  ];
+
+  const renderCompanies = () => {
+    return (
+      <>
+        {companies.map((comp, idx) => (
+          <Col className='consultant-desc text-center m-2 p-4'>
+            <img
+              className='homepage-about-companies'
+              src={comp.image}
+              alt={comp.company}
+            />
+            <br />
+            {comp.description}
+          </Col>
+        ))}
+      </>
+    );
+  };
+
   return (
     <>
       <Container id='intro-opening-1'>
@@ -34,8 +76,8 @@ export const Home = () => {
               <Button
                 href='/book-online'
                 className='desktop-book-now'
-                variant={"primary"}
-                size={"lg"}
+                variant={'primary'}
+                size={'lg'}
               >
                 Book Now
               </Button>
@@ -61,8 +103,8 @@ export const Home = () => {
 
               <Button
                 href='/plans-pricing'
-                variant={"outline-secondary"}
-                size={"lg"}
+                variant={'outline-secondary'}
+                size={'lg'}
               >
                 Learn More
               </Button>
@@ -91,40 +133,7 @@ export const Home = () => {
         </Row>
 
         <Container>
-          <Row className='mx-auto'>
-            <Col className='consultant-desc text-center m-2 p-4'>
-              <img
-                className='homepage-about-companies'
-                src='/assets/images/adp-logo.webp'
-                alt='ADP'
-              />
-              <br />
-              Experienced analytics professionals to educate you on data
-              visualization, data science and data engineering. Automatic Data
-              Processing
-            </Col>
-            <Col className='consultant-desc text-center m-2 p-4'>
-              <img
-                className='homepage-about-companies'
-                src='/assets/images/sales-force-logo.webp'
-                alt='salesforce'
-              />
-              <br />
-              Architects driven to educate and grow your knowledge beyond
-              Salesforce Trailhead to fully understand the fundamentals and
-              principles of Salesforce architecture. Salesforce
-            </Col>
-            <Col className='consultant-desc text-center m-2 p-4'>
-              <img
-                className='homepage-about-companies'
-                src='/assets/images/delta-logo.webp'
-                alt='delta'
-              />
-              <br />
-              Strategy consultants focused in growing your knowledge and
-              understanding of pricing and marketing strategies. Delta Airlines
-            </Col>
-          </Row>
+          <Row className='mx-auto'>{renderCompanies()}</Row>
         </Container>
       </Container>
 
@@ -202,7 +211,7 @@ export const Home = () => {
               </li>
             </ul>
 
-            <Button href='/plans-pricing' variant={"secondary"} size={"lg"}>
+            <Button href='/plans-pricing' variant={'secondary'} size={'lg'}>
               Plans & Pricing
             </Button>
           </Col>
