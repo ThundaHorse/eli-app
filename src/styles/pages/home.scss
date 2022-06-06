@@ -136,6 +136,40 @@
   }
 }
 
+.reviews-section {
+  background: #f7f6f6;
+}
+
+.reviewcard {
+  .reviewtext {
+    font-size: 0.85em;
+  }
+
+  .reviewauthor {
+    border-top: 1px solid #d8c9d8;
+    padding-top: 1em;
+    margin-top: 1em;
+  }
+
+  .reviewauthor .authortitle {
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .reviewauthor .authortitle a {
+    font-size: 0.85em;
+    font-weight: 300;
+    color: #d8c9d8;
+    float: right;
+  }
+}
+
+.stars span {
+  color: #ffc633;
+  font-size: 1.5em;
+}
+
 @media screen and (max-width: px2rem(480)) {
   #intro-opening-1 {
     height: 100%;

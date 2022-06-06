@@ -88,6 +88,17 @@ export const Home = () => {
 
       <hr className='grey lighten-5' />
 
+      <section className='reviews-section doublemarvellous'>
+        <div className='container'>
+          <div
+            id='reviews'
+            className='columns is-marginless is-multiline'
+          ></div>
+        </div>
+      </section>
+
+      <hr className='grey lighten-5' />
+
       <Container id='intro-opening-2' fluid>
         <Container>
           <Row id='intro-opening'>
