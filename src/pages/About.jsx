@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import '../styles/pages/about.scss';
 import { Row, Col, Container, Card } from 'react-bootstrap';
