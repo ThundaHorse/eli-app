@@ -90,12 +90,6 @@
   }
 }
 
-@media screen and (max-width: px2rem(480)) {
-  .footer-placeholder {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 900px) {
   .footer-placeholder {
     padding-bottom: px2rem(10);

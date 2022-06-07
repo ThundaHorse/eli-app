@@ -143,6 +143,10 @@
       max-width: px2rem(400);
       text-align: left;
     }
+
+    .review-loader {
+      height: 100%;
+    }
   }
 
   @media screen and (max-width: px2rem(480)) {
