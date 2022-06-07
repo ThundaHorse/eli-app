@@ -1,3 +1,7 @@
+#about-us-page {
+  padding: 0;
+}
+
 .about-us-intro-wrapper {
   display: flex;
   flex-direction: column;
@@ -5,41 +9,6 @@
 
 .about-us-heading {
   font-size: px2rem(32);
-}
-
-.reviews-section {
-  background: white;
-}
-.reviews-desc-cards {
-  width: px2rem(100);
-
-  .review-card {
-    border-radius: px2rem(4);
-  }
-
-  .review-avatar {
-    border-radius: 50%;
-    height: auto;
-    margin-bottom: px2rem(20);
-    margin-right: px2rem(18);
-    margin-top: px2rem(20);
-    width: px2rem(50);
-  }
-
-  .review-author {
-    font-weight: bold;
-  }
-
-  .review-rating {
-    font-size: px2rem(14);
-    margin: px2rem(4);
-    margin-bottom: px2rem(20);
-  }
-
-  .review-body {
-    font-size: px2rem(14);
-    text-align: left;
-  }
 }
 
 .about-us-sec {

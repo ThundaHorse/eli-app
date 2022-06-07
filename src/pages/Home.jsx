@@ -86,8 +86,6 @@ export const Home = () => {
         </Row>
       </Container>
 
-      <hr className='grey lighten-5' />
-
       <section className='reviews-section doublemarvellous'>
         <div className='container'>
           <div
@@ -96,8 +94,6 @@ export const Home = () => {
           ></div>
         </div>
       </section>
-
-      <hr className='grey lighten-5' />
 
       <Container id='intro-opening-2' fluid>
         <Container>
@@ -131,8 +127,6 @@ export const Home = () => {
           </Row>
         </Container>
       </Container>
-
-      <hr className='grey lighten-5' />
 
       <Container id='intro-companies' fluid>
         <Row id='companies-heading'>

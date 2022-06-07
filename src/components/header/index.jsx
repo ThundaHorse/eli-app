@@ -12,9 +12,10 @@ export const PageHeader = () => {
         id='mobile-nav'
         brand={
           <a href='/' className='right'>
-            <FontAwesomeIcon
+            <img
+              src='/assets/images/nerd-glasses.png'
               className='brand-logo hide-on-large-only'
-              icon={faFaceGrinWink}
+              alt='Mobile Icon'
             />
           </a>
         }
@@ -34,15 +35,21 @@ export const PageHeader = () => {
       >
         <NavItem href='/' className='nav-link navbar-brand'>
           Follow the Nerd
-          <FontAwesomeIcon className='mx-3' icon={faFaceGrinWink} />
+          <FontAwesomeIcon
+            className='mobile-drawer-icon mx-3'
+            icon={faFaceGrinWink}
+          />
         </NavItem>
-        <NavItem href='/book-now' className='nav-link mx-5'>
+        <NavItem href='/book-now' className='nav-link mx-2'>
           Book Now
         </NavItem>
-        <NavItem href='/plans-pricing' className='nav-link mx-5'>
+        <NavItem href='/plans-pricing' className='nav-link mx-2'>
           Plans & Pricing
         </NavItem>
-        <NavItem href='/about' className='nav-link mx-5'>
+        <NavItem href='/success-stories' className='nav-link mx-2'>
+          Success Stories
+        </NavItem>
+        <NavItem href='/about' className='nav-link mx-2'>
           About
         </NavItem>
       </Navbar>

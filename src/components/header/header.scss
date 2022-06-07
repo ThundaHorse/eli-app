@@ -1,5 +1,5 @@
-@import "../../styles/utilities";
-@import "../../styles/base";
+@import '../../styles/utilities';
+@import '../../styles/base';
 
 .navbar {
   display: flex;
@@ -7,6 +7,7 @@
   height: px2rem(100);
   align-items: center;
   justify-content: center;
+  box-shadow: px2rem(5) px2rem(10) px2rem(10) rgb(0 0 0 / 20%);
 
   .nav-wrapper {
     width: 90%;
@@ -20,8 +21,7 @@
 
   .nav-link {
     @extend .link-black;
-    font-weight: 500;
-    font-size: px2rem(18);
+    font-size: px2rem(16);
     margin-right: px2rem(32);
 
     &:hover {
@@ -43,17 +43,25 @@
 }
 
 #mobile-nav {
-  background-color: #e8f5e9;
+  background-color: #e3f2fdec;
 }
 
 @media screen and (max-width: px2rem(480)) {
   .navbar {
     justify-content: start;
-    height: px2rem(80);
+    height: px2rem(70) !important;
   }
 
   #mobile-nav {
     padding: px2rem(24) px2rem(10);
+  }
+
+  .mobile-drawer-icon {
+    color: black;
+  }
+
+  .nav-link {
+    color: #1f7267 !important;
   }
 }
 

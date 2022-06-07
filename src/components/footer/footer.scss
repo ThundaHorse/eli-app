@@ -1,5 +1,5 @@
-@import "../../styles/utilities";
-@import "../../styles/base";
+@import '../../styles/utilities';
+@import '../../styles/base';
 
 .footer-placeholder {
   display: block;
@@ -87,6 +87,12 @@
 
   .footer-column-last {
     width: auto;
+  }
+}
+
+@media screen and (max-width: px2rem(480)) {
+  .footer-placeholder {
+    display: none;
   }
 }
 
