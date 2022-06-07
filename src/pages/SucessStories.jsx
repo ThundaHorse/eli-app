@@ -27,7 +27,7 @@ export const SuccessStories = () => {
       if (cachedReviews) {
         result = cachedReviews;
       } else {
-        result = await axios(url);
+        result = await axios.get(url);
         localStorage.setItem('reviews', JSON.stringify(result));
       }
       setReviews(result.data.reviews);
