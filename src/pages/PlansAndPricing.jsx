@@ -1,72 +1,72 @@
-import React from "react";
-import "../styles/pages/plansAndPricing.scss";
-import { Container, Col, Button, Row } from "react-bootstrap";
-import { Animated } from "react-animated-css";
+import React from 'react';
+import '../styles/pages/plansAndPricing.scss';
+import { Container, Col, Button, Row } from 'react-bootstrap';
+import { Animated } from 'react-animated-css';
 
 export const PlansAndPricing = () => {
   const plans = [
     {
-      title: "Help me Package",
-      pricing: "50",
-      validPeriod: "Every month",
+      title: 'Help me Package',
+      pricing: '100',
+      validPeriod: 'Every month',
       planIntro:
-        "Join our FTN community where you can grow with our Nerds and previous clients",
+        'Join our FTN community where you can grow with our Nerds and previous clients',
       planDescription: [
-        "Assistance with navigating corporate bureaucracy",
-        "24/7 access to all Nerds to guide you through any escalations or issues you may face on a day to day basis",
-        "Guidance on key deliverables to ensure your quality of work reflects your professional brand",
-        "Assistance on basic technical needs",
+        'Assistance with navigating corporate bureaucracy',
+        '24/7 access to all Nerds to guide you through any escalations or issues you may face on a day to day basis',
+        'Guidance on key deliverables to ensure your quality of work reflects your professional brand',
+        'Assistance on basic technical needs',
       ],
-      bgColor: "grey darken-4 text-white",
+      bgColor: 'grey darken-4 text-white',
     },
     {
-      title: "Mock Interview",
-      pricing: "149",
-      validPeriod: "Valid for one week",
-      planIntro: "Ready to ace your interview? This is for you",
+      title: 'Mock Interview',
+      pricing: '175',
+      validPeriod: 'Valid for one week',
+      planIntro: 'Ready to ace your interview? This is for you',
       planDescription: [
-        "Recorded live session from the interviewer",
-        "Feedback and suggestion on areas of focus",
-        "Receive insights to a successful interview response",
-        "Resume review",
+        'Recorded live session from the interviewer',
+        'Feedback and suggestion on areas of focus',
+        'Receive insights to a successful interview response',
+        'Resume review',
       ],
-      bgColor: "blue-grey lighten-4",
+      bgColor: 'blue-grey lighten-4',
     },
     {
-      title: "Resume Package",
-      pricing: "500",
-      validPeriod: "Valid for one month",
+      title: 'Resume Package',
+      pricing: '650',
+      validPeriod: 'Valid for one month',
       planIntro:
-        "Receive a FTN certified resume to land you the job of your dreams",
+        'Receive a FTN certified resume to land you the job of your dreams',
       planDescription: [
-        "Understand and learn how to phrase and document key points needed for resumes for future knowledge",
-        "In-depth review of current resume",
-        "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
+        'Understand and learn how to phrase and document key points needed for resumes for future knowledge',
+        'In-depth review of current resume',
+        '1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry',
       ],
-      bgColor: "grey darken-3 text-white",
+      bgColor: 'grey darken-3 text-white',
     },
     {
-      title: "Find me a job!",
-      pricing: "700",
-      validPeriod: "Valid for one month",
+      title: 'Find me a job!',
+      pricing: '1000',
+      validPeriod: 'Valid for one month',
       planIntro:
-        "A personal Nerd to be by your side through the start to end process of your job search",
+        'A personal Nerd to be by your side through the start to end process of your job search',
       planDescription: [
-        "1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry",
-        "Bi-weekly interview prep sessions to ensure your on top of all potential behavioral questions that could be asked ",
-        "Consultation on navigating offers and identify your best fit",
+        '1 on 1 sessions with your personal Nerd to do an in depth review of your resume and roadmap a strategy for success on your desired role or industry',
+        'Bi-weekly interview prep sessions to ensure your on top of all potential behavioral questions that could be asked ',
+        'Consultation on navigating offers and identify your best fit',
       ],
-      bgColor: "grey darken-2 text-white",
+      bgColor: 'grey darken-2 text-white',
     },
     {
-      title: "Portfolio Revamp",
-      pricing: "800",
-      validPeriod: "until completion",
-      planIntro: "Ready to seek new opportunities and career growth?",
+      title: 'Portfolio Revamp',
+      pricing: '1200',
+      validPeriod: 'until completion',
+      planIntro: 'Ready to seek new opportunities and career growth?',
       planDescription: [
-        "Your portfolio defines your brand!",
-        "Have a design certified Nerd review and revamp your portfolio to highlight your key strengths and abilities.",
-        "They’ll partner with you to guide you along your journey and support you through your development process to ensure a high quality product.",
+        'Your portfolio defines your brand!',
+        'Have a design certified Nerd review and revamp your portfolio to highlight your key strengths and abilities.',
+        'They’ll partner with you to guide you along your journey and support you through your development process to ensure a high quality product.',
       ],
     },
   ];
@@ -82,7 +82,7 @@ export const PlansAndPricing = () => {
                   <Col className='pull-l1'>
                     <h4 className='plan-title mt-4 mb-4'>{plan.title}</h4>
                     <h5 className='plan-price'>
-                      ${plan.pricing}{" "}
+                      ${plan.pricing}{' '}
                       <span className='plan-valid-period'>
                         {plan.validPeriod}
                       </span>
@@ -126,7 +126,7 @@ export const PlansAndPricing = () => {
                   <Col className='push-l1'>
                     <h4 className='plan-title mt-4 mb-4'>{plan.title}</h4>
                     <h5 className='plan-price'>
-                      ${plan.pricing}{" "}
+                      ${plan.pricing}{' '}
                       <span className='plan-valid-period'>
                         {plan.validPeriod}
                       </span>

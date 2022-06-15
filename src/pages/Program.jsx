@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
-import "../styles/pages/program.scss";
+import React, { useEffect, useState } from 'react';
+import { Container, Col, Row } from 'react-bootstrap';
+import { useLocation } from 'react-router-dom';
+import '../styles/pages/program.scss';
 
 export const Program = () => {
   const location = useLocation();
   const [plan, setPlan] = useState({
-    title: "",
-    planIntro: "",
-    pricing: "",
-    validPeriod: "",
+    title: '',
+    planIntro: '',
+    pricing: '',
+    validPeriod: '',
     planDescription: [],
   });
 
@@ -28,7 +28,7 @@ export const Program = () => {
           <Col className='text-center'>
             <h4 className='plan-title'>{plan.title}</h4>
             <h5 className='plan-price'>
-              ${plan.pricing}{" "}
+              ${plan.pricing}{' '}
               <span className='plan-valid-period'>{plan.validPeriod}</span>
             </h5>
           </Col>
