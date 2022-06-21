@@ -8,6 +8,7 @@ import { faStar, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { Row, Col, Container, Spinner } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper';
+import { useBeforeunload } from 'react-beforeunload';
 
 // SwiperJs Styles
 import 'swiper/scss';
@@ -23,18 +24,30 @@ export const SuccessStories = () => {
 
       const cachedReviews = JSON.parse(localStorage.getItem('reviews'));
       let result;
+      let fetchedTime = new Date().getHours() + 1;
 
       if (cachedReviews) {
         result = cachedReviews;
       } else {
         result = await axios.get(url);
         localStorage.setItem('reviews', JSON.stringify(result));
+        localStorage.setItem('reviewFetchTime', JSON.stringify(fetchedTime));
       }
       setReviews(result.data.reviews);
     };
 
     fetchGoogleReviews();
   }, []);
+
+  useBeforeunload((e) => {
+    const expVal = JSON.parse(localStorage.getItem('reviewFetchTime'));
+    const currentTime = new Date().getHours();
+    console.log(`${expVal} || ${currentTime}`);
+    console.log(expVal <= currentTime);
+    if (expVal <= currentTime) {
+      localStorage.clear();
+    }
+  });
 
   const renderReviews = () => {
     return (
