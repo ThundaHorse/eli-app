@@ -42,8 +42,6 @@ export const SuccessStories = () => {
   useBeforeunload((e) => {
     const expVal = JSON.parse(localStorage.getItem('reviewFetchTime'));
     const currentTime = new Date().getHours();
-    console.log(`${expVal} || ${currentTime}`);
-    console.log(expVal <= currentTime);
     if (expVal <= currentTime) {
       localStorage.clear();
     }
